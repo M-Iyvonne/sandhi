@@ -8,7 +8,7 @@ var blastSchema = new mongoose.Schema(
         author:   String,
         title:    String,
         subject:  String,
-        date:     Date
+        date:     {type :Date, default: Date.now}
     });
 
 var Blast = mongoose.model('Blast', blastSchema);
