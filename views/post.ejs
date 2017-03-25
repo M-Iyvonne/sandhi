@@ -1,33 +1,47 @@
 <% include includes/header %>
 
 
- <form class="post " action="/post" method="POST">
+ <form class="post blastForm" action="/post" method="POST">
         <div class="form-group">
             <label>Title</label>
             <input type="text" class="form-control" name="title">
         </div>
         <div class="form-group">
             <label>Subject</label>
-            <input type="test" class="form-control" name="subject">
+            <input type="text" class="form-control" name="subject">
         </div>
       
      
-        <button type="submit" class="btn btn-warning btn-lg">Posts</button>
+        <button type="submit" class="blast btn btn-warning btn-lg">Posts</button>
     </form>
  
-    <div class ='col-sm-3'></div>
-    <div class= "col-sm-6 post">
-          <% for(var i=0; i<blasts.length; i++) {%>
-            <div class="blasts">
-              <h3><span>Title: <%= blasts[i].title %></span></h3>
-              <p><span>Subject: <%= blasts[i].subject %></span><p>
-              <p><span>Author: <%= blasts[i].author %></span><p>
-            </div>
-          <% } %>
+    
+    <div class= "col-sm-12 post">
+      <% for(var i=0; i<blasts.length; i++) {%>
+        <div class="blasts">
+          <h3><span>Title: <%= blasts[i].title %></span></h3>
+          <p><span>Subject: <%= blasts[i].subject %></span></p>
+          <p><span>Author: <%= blasts[i].author %></span></p>
+          <p><span>Date: <%= blasts[i].date %></span></p>
+
+          <ul class="comment">
+            <% for(var j=0; j<blasts[i].comments.length; j++) {%>
+              <li><%= comments[blasts[i].comments[j]].subject %> - <%= comments[blasts[i].comments[j]].author %></li>
+            <% } %>
+          </ul>
+
+      <form class="form-inline" action="/comment" method="POST">
+          <div class="form-group">
+            <input type="hidden" name="blast_id" value="<%= blasts[i]._id%>"/>
+            <input type="text" class="form-control input-lg " name="comment">
+          </div>
+         <button type="submit" class="comment btn btn-warning btn-sm">Comment</button>
+      </form>
+      </div>
+      <% } %>
     </div>
 
 
-
-</html>
+<% include includes/footer %>
 
   

@@ -1,11 +1,11 @@
 <% include includes/header %>
 <body>
-<div class="container">
+<div class="container test">
 
     <div class="page-header text-center">
-        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
-        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
-    </div>
+        <h1>Profile Page</h1>
+<!--         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+ -->    </div>
 
     <div class="row">
 
@@ -16,10 +16,9 @@
 
                 <p><strong>id</strong>:<%= user._id %></p>
                 <p><strong>email</strong>:<%= user.local.email %></p>
-                <p><strong>First Name</strong>:<%= user.local.firstName %></p>
-                <p><strong>Last Name</strong>:<%= user.local.lastName %>
+                <p><strong>Name</strong>:<%= user.local.name %></p>
                 <p><strong>About Me</strong>:<%= user.local.aboutMe %>
-                <p><strong>Username</strong>:<%= user.local.username %>
+                
             </div>
         </div>
 
@@ -30,23 +29,20 @@
                     <p><strong>id</strong>: <%= user._id %></p>
                     <p><strong>email</strong>: <%= user.facebook.email %></p>
                     <p><strong>name</strong>: <%= user.facebook.name %> </p>
-                    <p><strong>Username</strong>:<%= user.facebook.username %>
+                    
 
             </div>
         </div>
 
     </div>
-
+    </div>
+    <div class="container">
     <div class='row'>
          <form action="/profile" method="POST">
            
             <div class="form-group">
-                <label>First Name</label>
-                <input type="text" class="form-control" name="firstName" value="<%= user.local.firstName%>">
-            </div>
-            <div class="form-group">
-                <label>Last Name</label>
-                <input type="test" class="form-control" name="lastName" value="<%= user.local.lastName%>">
+                <label>Name</label>
+                <input type="text" class="form-control" name="name" value="<%= user.local.name%>">
             </div>
             <div class="form-group">
                 <label>About Me</label>
@@ -55,10 +51,7 @@
             <button type="submit" class="btn btn-warning btn-lg">Sumbit Changes</button>
          </form>
     </div>
-   <!--  <div class='row'>  
-        <p><a href="/post">Posts</a></p>
-    </div> -->
 
 </div>
-</body>
-</html>
+
+<% include includes/footer %>

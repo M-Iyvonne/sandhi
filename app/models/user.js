@@ -8,20 +8,20 @@ var userSchema = mongoose.Schema({
     local            : {
         email        : String,
         password     : String,
-        firstName    : String,
-        lastName     : String,
-        aboutMe      : String,
-        username     : String
+        aboutMe      : String, 
+        name         : String,
     },
     facebook         : {
         id           : String,
         token        : String,
         email        : String,
         name         : String,
-        username     : { type: String, unique: true}  
-    }
-
-
+    },
+    
+    name            : {
+        name        : String,
+    }   
+     // comes from form on local, or user object on facebook
 });
 
 // generating a hash

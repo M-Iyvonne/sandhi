@@ -1,5 +1,6 @@
 var User = require('./models/user');
 var Blast = require('./models/post');
+var Comment = require('./models/comments');
 
 
 module.exports = function(app, passport) {
@@ -25,8 +26,7 @@ module.exports = function(app, passport) {
     app.post('/profile', isLoggedIn, function(req, res) {
         User.findOne({ _id: req.user._id }, function(err, user) {
             if (!err) {
-                user.local.firstName = req.body.firstName;
-                user.local.lastName = req.body.lastName;
+                user.local.name = req.body.name;
                 user.local.aboutMe = req.body.aboutMe;
                 user.save(function(err) {
                     if (!err) {
@@ -40,12 +40,51 @@ module.exports = function(app, passport) {
     //Posts Page ========================
     //=================
     app.get('/post', isLoggedIn, function(req, res) {
-        Blast.find({}, function(err, data) {
-            if (!err) {
-                res.render('post.ejs', { user: req.user, blasts: data })
-            }
-            
-        });
+
+        var blasts;
+        var commentArray = [];
+        var comments = {};
+        var authorsArray = [];
+        var authors = {};
+
+        Blast.find({}).sort('-date').exec()
+            .then(function(blastData){
+                blasts = blastData;
+                blasts.forEach(function(blast){
+                    blast.comments.forEach(function(comment){
+                        commentArray.push(comment);
+                    });
+                });
+
+                return Comment.find({'_id': {$in: commentArray}}).exec();
+            })
+            .then(function(commentData){
+                commentData.forEach(function(comment){
+                    comments[comment._id] = comment;
+                    if(authorsArray.indexOf(comment.author)===-1){
+                        authorsArray.push(comment.author);
+                    }
+                });
+                console.log('---Comments---',comments);
+                console.log('---authorsArray---',authorsArray);
+                return User.find({'_id': {$in: authorsArray}}).exec();
+            })
+            .then(function(authorData){
+                authorData.forEach(function(author){
+                    authors[author._id] = author;
+                });
+                console.log('---authors---',authors);
+                return res.render('post.ejs',{user: req.user, blasts: blasts, comments: comments, authors: authors});
+            });
+
+        // Blast.find({}).sort('-date').exec(function(err, data) {
+        //     if (!err) {
+        //         res.render('post.ejs', { user: req.user, blasts: data })
+        //     } else {
+        //         console.log(err);
+        //     }
+        // })
+
     });
 
     app.post('/post', isLoggedIn, function(req, res) {
@@ -63,9 +102,32 @@ module.exports = function(app, passport) {
 
         });
     });
+    // ==========================
+    // setting up Comments
+    //===========================
 
+    app.post('/comment', isLoggedIn, function(req, res) {
+        
 
-
+        var newComment = new Comment({
+            blast: req.body.blast_id,
+            subject: req.body.comment,
+            author: req.user._id
+        });
+        newComment.save(function(err) {
+            if (!err) {
+                //Blast.find
+                Blast.findOne({_id:req.body.blast_id},function(err2,blast){
+                    blast.comments.push(newComment._id);
+                    blast.save(function(err){
+                        res.redirect('/post');
+                    });
+                });
+            }
+        });
+            
+        
+    });
 
     // LOGOUT ==============================
     app.get('/logout', function(req, res) {

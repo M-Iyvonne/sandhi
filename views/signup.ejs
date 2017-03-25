@@ -1,4 +1,34 @@
-<% include includes/header %>
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sandhi</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<nav class="navbar navbar bg-yellow" role="navigation">
+    <div class="container-fluid">
+
+        <div class="nav navbar-header">
+            <a class="navbar-brand" href="/">
+                <span class="glyphicon"></span>
+                Sandhi
+            </a>
+        </div>
+           <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/post">Blasts</a></li>
+            <li><a href="/profile">Profile</a></li>
+        </ul>
+         <ul class="nav navbar-nav navbar-right">
+          <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        </div>
+    </div>
+</nav>
 <body>
 <div class="container">
 <div class="col-sm-6 col-sm-offset-3">
@@ -12,8 +42,8 @@
     <!-- LOGIN FORM -->
     <form action="/signup" method="POST">
         <div class="form-group">
-            <label>Username</label>
-            <input type="text" class="form-control" name="username">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" >
         </div>
         <div>
             <label>Email</label>
@@ -36,5 +66,5 @@
 
 </div>
 </div>
-</body>
-</html>
+
+<% include includes/footer %>
