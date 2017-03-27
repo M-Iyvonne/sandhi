@@ -6,13 +6,13 @@ var bcrypt   = require('bcrypt-nodejs');
 var eventSchema = mongoose.Schema(
     {
         eventName:   String,
-        studio:    	 String,
         location:    String,
         eventDay:    {type:String },
         startTime:   {type:String },
         endTime:     {type:String },
         date:        {type:String },
-        about: 		 String 
+        about: 		 String,
+        createdBy:   String
     });
 
 var Event = mongoose.model('Event', eventSchema);

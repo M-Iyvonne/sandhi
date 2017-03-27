@@ -11,21 +11,27 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-<nav class="navbar navbar bg-yellow" role="navigation">
-    <div class="container-fluid">
+<nav class="navbar navbar bg-yellow"  role="navigation" >
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="ham icon-bar"></span>
+        <span class="ham icon-bar"></span>
+        <span class="ham icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Sandhi</a>
+    </div>
 
-        <div class="nav navbar-header">
-            <a class="navbar-brand" href="/">
-                <span class="glyphicon"></span>
-                Sandhi
-            </a>
-        </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="/post">Blasts</a></li>
+        <li><a href="/profile">Profile</a></li>
+      </ul>
 <% if(user){ %>
-        <ul class="nav navbar-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/post">Blasts</a></li>
-            <li><a href="/profile">Profile</a></li>
-        </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="/profile">Hello <%= user.local.name %></a></li>
           <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
@@ -44,22 +50,4 @@
 
   </div>
 </nav>
-<body>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '377938202593271',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-    FB.AppEvents.logPageView();
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>

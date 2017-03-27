@@ -25,6 +25,7 @@ var storage = multer.diskStorage({
 		callback(null, file.fieldname + '-' + Date.now());
 	}
 });
+
 var upload = multer({storage: storage}).single('userPhoto');
 
 

@@ -11,6 +11,11 @@
  	background-color: rgba(232, 180, 102, .75);
  
  }
+ .ham {
+ 	background-color: black;
+ 	height: 3px;
+ }
+ .navbar-brand,
  .nav a {
  	color: rgb(102, 51, 0);
  }

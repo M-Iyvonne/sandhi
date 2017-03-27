@@ -18,7 +18,9 @@ module.exports = function(app, passport) {
 
     // PROFILE SECTION =========================
     app.get('/profile', isLoggedIn, function(req, res) {
+        // Event.$where('event.createdBy === user.local.name').exec(callback)
         Event.find({}, function(err, event ){
+
         res.render('profile.ejs', {user: req.user, event:event});
         console.log({event:event});
         });
@@ -43,10 +45,10 @@ module.exports = function(app, passport) {
    app.post('/event', isLoggedIn, function(req, res) {
         var newEvent = new Event({
             eventName: req.body.eventName,
-            studio: req.body.studio,
             location: req.body.location,
             date: req.body.date,
-            about: req.body.about
+            about: req.body.about,
+            createdBy: req.user.local.name
         });
         newEvent.save(function(err) {
             if (!err) {
@@ -96,15 +98,15 @@ module.exports = function(app, passport) {
                         authorsArray.push(comment.author);
                     }
                 });
-                // console.log('---Comments---',comments);
-                console.log('---authorsArray---',authorsArray);
-                return User.find({'local.name': {$in: authorsArray}}).exec();
-            })
-            .then(function(authorData){
-                authorData.forEach(function(author){
-                    authors[author._id] = author;
-                });
-                console.log('---authors---',authors);
+            //     // console.log('---Comments---',comments);
+            //     console.log('---authorsArray---',authorsArray);
+            //     return User.find({'local.name': {$in: authorsArray}}).exec();
+            // })
+            // .then(function(authorData){
+            //     authorData.forEach(function(author){
+            //         authors[author._id] = author;
+            //     });
+            //     console.log('---authors---',authors);
                 return res.render('post.ejs',{user: req.user, blasts: blasts, comments: comments, authors: authors});
             });
 

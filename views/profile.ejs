@@ -80,10 +80,6 @@
                                     <input type="text" class="form-control" name="eventName">
                                 </div>
                                 <div class="form-group">
-                                    <label>Studio</label>
-                                    <input type="text" class="form-control" name="studio">
-                                </div>
-                                <div class="form-group">
                                     <label>Date and Time</label>
                                     <input type="text" class="form-control" name="date">
                                 </div>
@@ -113,17 +109,19 @@
 
         
     </div>
-   
+  
    <div class="container bg-event"> 
     <% for(var i=0; i<event.length; i++) {%> 
     <div class="col-sm-3 event"> 
     <h2><span><%= event[i].eventName %></span></h2>
-    <h4><span><%= event[i].studio %></span></h4>
     <h5><span><%= event[i].date %></span></h5>
     <h5><span><%= event[i].location %></span></h5>
     <p><span><%= event[i].about %></span></p>
+    <h5><span><%= event[i].createdBy %></span></h5>
+
     </div>
     <% } %>
+
     </div>
 
 
