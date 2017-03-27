@@ -10,6 +10,8 @@ var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
+var moment		 =require('moment');
+var jquery		 =require('jquery');
 
 var configDB = require('./config/database.js');
 

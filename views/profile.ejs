@@ -3,55 +3,97 @@
 <div class="container test">
 
     <div class="page-header text-center">
-        <h1>Profile Page</h1>
-<!--         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
- -->    </div>
+        <h1>Profile</h1>
+    </div>
 
     <div class="row">
 
         <!-- LOCAL INFORMATION -->
-        <div class="col-sm-6">
+        <div class="col-sm-8">
             <div class="well">
-                <h3><span class="fa fa-user"></span> Local</h3>
-
-                <p><strong>id</strong>:<%= user._id %></p>
-                <p><strong>email</strong>:<%= user.local.email %></p>
+                <!-- <h3><span class="fa fa-user"></span> Local</h3> -->
+                
+                <!-- <p><strong>id</strong>:<%= user._id %></p> -->
+                <% if(user.local.email){ %>
+                    <p><strong>Email</strong>: <%= user.local.email %></p>
+                <% }else if(user.facebook.email !== null) { %>
+                    <p><strong>Email</strong>: <%= user.facebook.email %></p>
+                    <% } %>
                 <p><strong>Name</strong>:<%= user.local.name %></p>
-                <p><strong>About Me</strong>:<%= user.local.aboutMe %>
+                <p><strong>About Me</strong>:<%= user.local.aboutMe %></p>
+
+
+                <div class="container">
+                  <!-- Trigger the modal with a button -->
+                  <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal">Update Profile</button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Profile Update</h4>
+                        </div>
+                        <div class="modal-body">
+                             <form class="col-sm-8" action="/profile" method="POST"> 
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" name="name" value="<%= user.local.name%>">
+                                </div>
+                                <div class="form-group">
+                                    <label>About Me</label>
+                                    <input type="text" class="form-control" name="aboutMe" value="<%= user.local.aboutMe%>">
+                                </div>
+                                <button type="submit" class="btn btn-warning btn-lg">Update Profile</button>
+                             </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
                 
             </div>
         </div>
-
-        <div class="col-sm-6">
-            <div class="well">
-                <h3><span class="fa fa-facebook"></span> Facebook</h3>
-
-                    <p><strong>id</strong>: <%= user._id %></p>
-                    <p><strong>email</strong>: <%= user.facebook.email %></p>
-                    <p><strong>name</strong>: <%= user.facebook.name %> </p>
-                    
-
-            </div>
-        </div>
-
     </div>
     </div>
+
     <div class="container">
-    <div class='row'>
-         <form action="/profile" method="POST">
-           
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" class="form-control" name="name" value="<%= user.local.name%>">
-            </div>
-            <div class="form-group">
-                <label>About Me</label>
-                <input type="test" class="form-control" name="aboutMe" value="<%= user.local.aboutMe%>">
-            </div>
-            <button type="submit" class="btn btn-warning btn-lg">Sumbit Changes</button>
-         </form>
+        <form class="col-sm-8" action="/event" method="POST">
+         <div class="form-group">
+            <label>Classes or Events</label>
+            <input type="text" class="form-control" name="eventName">
+        </div>
+        <div class="form-group">
+            <label>Date</label>
+            <input type="text" class="form-control" name="Date">
+        </div>
+        <div class="form-group">
+            <label>Location</label>
+            <input type="text" class="form-control" name="location" >
+        </div>
+        <div class="form-group">
+            <label>About</label>
+            <input type="text" class="form-control" name="about">
+        </div>
+        <button type="submit" class="btn btn-warning btn-lg">Create Event</button>
+     </form>
+    </div>
+   
+   <div class="container"> 
+    <% for(var i=0; i<event.length; i++) {%> 
+    <div class="col-sm-3 event"> 
+    <h3><span><%= event[i].eventName %></span></h3>
+    <h3><span><%= event[i].date %></span></h3>
+    <h3><span><%= event[i].location %></span></h3>
+    <h3><span><%= event[i].about %></span></h3>
+    </div>
+    <% } %>
     </div>
 
-</div>
+
 
 <% include includes/footer %>

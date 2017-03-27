@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Sandhi</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 <nav class="navbar navbar bg-yellow" role="navigation">
@@ -17,13 +20,14 @@
                 Sandhi
             </a>
         </div>
-<%if(user) { %>
+<% if(user){ %>
         <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
             <li><a href="/post">Blasts</a></li>
             <li><a href="/profile">Profile</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
+          <li><a href="/profile">Hello <%= user.local.name %></a></li>
           <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
         </ul>
 <% } else { %>
@@ -39,5 +43,4 @@
 <% } %>
 
   </div>
-    </div>
 </nav>

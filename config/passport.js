@@ -38,7 +38,7 @@ module.exports = function(passport) {
         usernameField : 'email',
         passwordField : 'password',
         passReqToCallback : true,
-        name: 'name' // allows us to pass in the req from our route (lets us check if a user is logged in or not)
+       // allows us to pass in the req from our route (lets us check if a user is logged in or not)
     },
     function(req, email, password, done) {
         if (email)
