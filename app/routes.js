@@ -11,6 +11,7 @@ module.exports = function(app, passport) {
     // show the home page (will also have our login links)
     app.get('/', function(req, res) {
         res.render('index.ejs', { user: req.user });
+        
     });
 
 
@@ -42,6 +43,7 @@ module.exports = function(app, passport) {
    app.post('/event', isLoggedIn, function(req, res) {
         var newEvent = new Event({
             eventName: req.body.eventName,
+            studio: req.body.studio,
             location: req.body.location,
             date: req.body.date,
             about: req.body.about

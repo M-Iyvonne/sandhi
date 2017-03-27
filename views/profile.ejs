@@ -49,7 +49,7 @@
                              </form>
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                         <!--  <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button> -->
                         </div>
                         </div>
                     </div>
@@ -62,34 +62,66 @@
     </div>
 
     <div class="container">
-        <form class="col-sm-8" action="/event" method="POST">
-         <div class="form-group">
-            <label>Classes or Events</label>
-            <input type="text" class="form-control" name="eventName">
+                  <!-- Trigger the modal with a button -->
+                  <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#event">Create New Event</button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="event" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Create New Event</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="col-sm-8" action="/event" method="POST">
+                                 <div class="form-group">
+                                    <label>Classes or Events</label>
+                                    <input type="text" class="form-control" name="eventName">
+                                </div>
+                                <div class="form-group">
+                                    <label>Studio</label>
+                                    <input type="text" class="form-control" name="studio">
+                                </div>
+                                <div class="form-group">
+                                    <label>Date and Time</label>
+                                    <input type="text" class="form-control" name="date">
+                                </div>
+                                <div class="form-group">
+                                    <label>Location</label>
+                                    <input type="text" class="form-control" name="location" >
+                                </div>
+                                <div class="form-group">
+                                    <label>About</label>
+                                    <input type="text" class="form-control" name="about">
+                                </div>
+                                <button type="submit" class="btn btn-warning btn-lg">Create Event</button>
+                             </form>
+                        </div>
+                        <div class="modal-footer">
+                         <!--  <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button> -->
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
         </div>
-        <div class="form-group">
-            <label>Date</label>
-            <input type="text" class="form-control" name="Date">
-        </div>
-        <div class="form-group">
-            <label>Location</label>
-            <input type="text" class="form-control" name="location" >
-        </div>
-        <div class="form-group">
-            <label>About</label>
-            <input type="text" class="form-control" name="about">
-        </div>
-        <button type="submit" class="btn btn-warning btn-lg">Create Event</button>
-     </form>
+    </div>
+    </div>
+
+        
     </div>
    
-   <div class="container"> 
+   <div class="container bg-event"> 
     <% for(var i=0; i<event.length; i++) {%> 
     <div class="col-sm-3 event"> 
-    <h3><span><%= event[i].eventName %></span></h3>
-    <h3><span><%= event[i].date %></span></h3>
-    <h3><span><%= event[i].location %></span></h3>
-    <h3><span><%= event[i].about %></span></h3>
+    <h2><span><%= event[i].eventName %></span></h2>
+    <h4><span><%= event[i].studio %></span></h4>
+    <h5><span><%= event[i].date %></span></h5>
+    <h5><span><%= event[i].location %></span></h5>
+    <p><span><%= event[i].about %></span></p>
     </div>
     <% } %>
     </div>

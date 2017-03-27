@@ -6,12 +6,16 @@ var bcrypt   = require('bcrypt-nodejs');
 var eventSchema = mongoose.Schema(
     {
         eventName:   String,
+        studio:    	 String,
         location:    String,
-        date:        String,
+        eventDay:    {type:String },
+        startTime:   {type:String },
+        endTime:     {type:String },
+        date:        {type:String },
         about: 		 String 
     });
 
 var Event = mongoose.model('Event', eventSchema);
 
-// create the model for Blast and expose it to our app
+// create the model for Events  and expose it to our app
 module.exports = Event;
