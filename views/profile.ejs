@@ -60,10 +60,10 @@
         </div>
     </div>
     </div>
-
     <div class="container">
                   <!-- Trigger the modal with a button -->
                   <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#event">Create New Event</button>
+                   <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="">My Events</button>
 
                   <!-- Modal -->
                   <div class="modal fade" id="event" role="dialog">
@@ -75,24 +75,28 @@
                         </div>
                         <div class="modal-body">
                             <form class="col-sm-8" action="/event" method="POST">
-                                 <div class="form-group">
-                                    <label>Classes or Events</label>
-                                    <input type="text" class="form-control" name="eventName">
-                                </div>
-                                <div class="form-group">
-                                    <label>Date and Time</label>
-                                    <input type="text" class="form-control" name="date">
-                                </div>
-                                <div class="form-group">
-                                    <label>Location</label>
-                                    <input type="text" class="form-control" name="location" >
-                                </div>
-                                <div class="form-group">
-                                    <label>About</label>
-                                    <input type="text" class="form-control" name="about">
-                                </div>
+                             <div class="form-group">
+                                <label>Classes or Events</label>
+                                <input type="text" class="form-control" name="eventName">
+                            </div>
+                            <div class="form-group">
+                                <label>Date and Time</label>
+                                <input type="text" class="form-control" name="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" class="form-control" name="location" >
+                            </div>
+                            <div class="form-group">
+                                <label>About</label>
+                                <input type="text" class="form-control" name="about">
+                            </div>
+                            <div class="form-group">
+                                <label>Image Url</label>
+                                <input type="text" class="form-control" name="imageUrl" value="http://">
+                            </div>
                                 <button type="submit" class="btn btn-warning btn-lg">Create Event</button>
-                             </form>
+                            </form>
                         </div>
                         <div class="modal-footer">
                          <!--  <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button> -->
@@ -101,29 +105,31 @@
                     </div>
                   </div>
                 </div>
-                
-            </div>
-        </div>
-    </div>
-    </div>
+       
+<!--     beginning of repeated events-->    
+   
+ 
 
+    <div class="container bg-event">
+        <div class="row">
+        <section id="pinBoot"> 
+        <h2>Events</h2>
+        <% for(var i=0; i < event.length; i++) {%> 
+        <h2></h2>
+    <hr>
         
+      <article class="white-panel"><img src="<%=event[i].imageUrl %>">
+        <h4><a href="#"><%= event[i].eventName %></a></h4>
+        <h4><a href="#"><%= event[i].location %></a></h4>
+        <h5><span><%= event[i].date %></span></h5>
+        <p><%= event[i].about %></p>
+        <h5><span>Created By: <%= event[i].createdBy %></span></h5>
+      </article>
+      <% } %>
+    </section>
     </div>
-  
-   <div class="container bg-event"> 
-    <% for(var i=0; i<event.length; i++) {%> 
-    <div class="col-sm-3 event"> 
-    <h2><span><%= event[i].eventName %></span></h2>
-    <h5><span><%= event[i].date %></span></h5>
-    <h5><span><%= event[i].location %></span></h5>
-    <p><span><%= event[i].about %></span></p>
-    <h5><span><%= event[i].createdBy %></span></h5>
-
-    </div>
-    <% } %>
-
-    </div>
-
-
+    <hr>
+  </div>
+<!-- End of Events -->
 
 <% include includes/footer %>

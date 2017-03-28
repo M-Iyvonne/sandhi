@@ -7,12 +7,10 @@ var eventSchema = mongoose.Schema(
     {
         eventName:   String,
         location:    String,
-        eventDay:    {type:String },
-        startTime:   {type:String },
-        endTime:     {type:String },
         date:        {type:String },
         about: 		 String,
-        createdBy:   String
+        createdBy:   String,
+        imageUrl: 	 String 
     });
 
 var Event = mongoose.model('Event', eventSchema);

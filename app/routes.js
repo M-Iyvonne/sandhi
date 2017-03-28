@@ -48,7 +48,8 @@ module.exports = function(app, passport) {
             location: req.body.location,
             date: req.body.date,
             about: req.body.about,
-            createdBy: req.user.local.name
+            createdBy: req.user.local.name,
+            imageUrl: req.body.imageUrl
         });
         newEvent.save(function(err) {
             if (!err) {
