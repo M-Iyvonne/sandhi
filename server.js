@@ -13,22 +13,8 @@ var session      = require('express-session');
 var moment		 =require('moment');
 
 var configDB = require('./config/database.js');
-
-
-//configuring multer for file upload
-var multer = require('multer');
-var storage = multer.diskStorage({
-	destination: function(req, file, callback){
-		callback(null, './public/uploads');
-	},
-	filename: function(req, file, callback){
-		callback(null, file.fieldname + '-' + Date.now());
-	}
-});
-
-var upload = multer({storage: storage}).single('userPhoto');
-
-
+var cors = require('cors');
+app.use(cors());
 
 // configuration ===============================================================
 mongoose.connect(configDB.url); // connect to our database
@@ -45,6 +31,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));  //setting up public folder
 
 app.set('view engine', 'ejs'); // set up ejs for templating
+
+
 
 // required for passport
 app.use(session({

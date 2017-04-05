@@ -1,6 +1,7 @@
 <% include includes/header %>
 
 <div class="container">
+<div class="col-sm-6 bg-yellow">
  <form class="post blastForm" action="/post" method="POST">
         <div class="form-group">
             <label>Title</label>
@@ -14,9 +15,10 @@
      
         <button type="submit" class="blast btn btn-warning btn-lg">Post New Blast</button>
     </form>
+
  
     
-    <div class= "col-sm-12 post">
+    <div class= "post">
       <% for(var i=0; i<blasts.length; i++) {%>
         <div class="blasts">
           <h3><span><%= blasts[i].title %></span></h3>
@@ -44,6 +46,25 @@
     </div>
 </div>
 
+   <!-- // beginning of Google Places Api // -->
+
+     <div class="col-sm-6">
+      <form method="GET" action="/places" class="g-api-form blasts">
+        <h1>Yoga Studios</h1>
+       
+       <!--  <label for="query"></label>
+        <input type="text" placeholder="Zip Code" class="js-keyword"><br>
+        <input type="text" placeholder='Zip' class='js-location'><br>
+        <input type="text" placeholder='Radius' class='js-radius'><br> -->
+        <button type="submit" class='btn btn-warning'>Search</button>
+      </form>
+      
+      <div class="gApi-results">
+      <% if(results){ %>
+         <div><% for(var i = 0; i < results.length; i++) { %> 
+         <div><% results[i].name %></div>
+         <% } %>
+      </div>
 
 <% include includes/footer %>
 

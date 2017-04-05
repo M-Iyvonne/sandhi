@@ -23,9 +23,9 @@
                 <p><strong>About Me</strong>:<%= user.local.aboutMe %></p>
 
 
-                <div class="container">
-                  <!-- Trigger the modal with a button -->
-                  <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal">Update Profile</button>
+            <div class="container">
+              <!-- Trigger the modal with a button -->
+              <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal">Update Profile</button>
 
                   <!-- Modal -->
                   <div class="modal fade" id="myModal" role="dialog">
@@ -48,88 +48,89 @@
                                 <button type="submit" class="btn btn-warning btn-lg">Update Profile</button>
                              </form>
                         </div>
-                        <div class="modal-footer">
-                         <!--  <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button> -->
-                        </div>
-                        </div>
+                        <div class="modal-footer"></div>
                     </div>
-                  </div>
                 </div>
-                
             </div>
         </div>
     </div>
-    </div>
-    <div class="container">
-                  <!-- Trigger the modal with a button -->
-                  <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#event">Create New Event</button>
-                   <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="">My Events</button>
+</div>
+</div>
+</div>
 
-                  <!-- Modal -->
-                  <div class="modal fade" id="event" role="dialog">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title">Create New Event</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form class="col-sm-8" action="/event" method="POST">
-                             <div class="form-group">
-                                <label>Classes or Events</label>
-                                <input type="text" class="form-control" name="eventName">
-                            </div>
-                            <div class="form-group">
-                                <label>Date and Time</label>
-                                <input type="text" class="form-control" name="date">
-                            </div>
-                            <div class="form-group">
-                                <label>Location</label>
-                                <input type="text" class="form-control" name="location" >
-                            </div>
-                            <div class="form-group">
-                                <label>About</label>
-                                <input type="text" class="form-control" name="about">
-                            </div>
-                            <div class="form-group">
-                                <label>Image Url</label>
-                                <input type="text" class="form-control" name="imageUrl" value="http://">
-                            </div>
-                                <button type="submit" class="btn btn-warning btn-lg">Create Event</button>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                         <!--  <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button> -->
-                        </div>
-                        </div>
-                    </div>
-                  </div>
+  <!-- beginning of Events -->
+
+      <div class="container bg-event">
+        <div class="row">
+          <div class="col-md-4">
+            <form action="/event/id" method="GET">
+              <button type="submit " class="btn btn-warning form-control">My Events</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form action="/profile" method="GET">
+              <button type="submit " class="btn btn-warning form-control">All Events</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form action="/event/search" method="GET" >
+              <input type="search" class="form-control" placeholder="Search Events">
+              <button type="submit" class="btn btn-warning"><i class="glyphicon glyphicon-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='container'>
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-warning btn-lg greedy" data-toggle="modal" data-target="#event">Create New Event</button>
+          <!-- Modal -->
+          <div class="modal fade" id="event" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Create New Event</h4>
                 </div>
+                <div class="modal-body">
+                    <form class="col-sm-8" action="/event" method="POST">
+                     <div class="form-group">
+                        <label>Classes or Events</label>
+                        <input type="text" class="form-control" name="eventName">
+                    </div>
+                    <div class="form-group">
+                        <label>Date and Time</label>
+                        <input type="text" class="form-control" name="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" class="form-control" name="location" >
+                    </div>
+                    <div class="form-group">
+                        <label>About</label>
+                        <input type="text" class="form-control" name="about">
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" class="form-control" name="userId">
+                    </div>
+                    <div class="form-group">
+                        <label>Image Url</label>
+                        <input type="text" class="form-control" name="imageUrl" value="http://">
+                    </div>
+                        <button type="submit" class="btn btn-warning btn-lg">Create Event</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
        
 <!--     beginning of repeated events-->    
    
- 
-
-    <div class="container bg-event">
-        <div class="row">
-        <section id="pinBoot"> 
-        <h2>Events</h2>
-        <% for(var i=0; i < event.length; i++) {%> 
-        <h2></h2>
-    <hr>
-        
-      <article class="white-panel"><img src="<%=event[i].imageUrl %>">
-        <h4><a href="#"><%= event[i].eventName %></a></h4>
-        <h4><a href="#"><%= event[i].location %></a></h4>
-        <h5><span><%= event[i].date %></span></h5>
-        <p><%= event[i].about %></p>
-        <h5><span>Created By: <%= event[i].createdBy %></span></h5>
-      </article>
-      <% } %>
-    </section>
-    </div>
-    <hr>
-  </div>
-<!-- End of Events -->
+<% include includes/loop %>
+   
 
 <% include includes/footer %>

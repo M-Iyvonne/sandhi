@@ -10,6 +10,7 @@ var eventSchema = mongoose.Schema(
         date:        {type:String },
         about: 		 String,
         createdBy:   String,
+        userId:    	 String,
         imageUrl: 	 String 
     });
 

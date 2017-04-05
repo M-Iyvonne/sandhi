@@ -10,7 +10,6 @@
 
  .bg-yellow {
  	background-color: rgba(232, 180, 102, .75);
- 
  }
  .ham {
  	background-color: black;
@@ -23,6 +22,7 @@
 
  .post {
  	margin: 25px auto;
+  width: 100%;
  }
  .blasts {
  	border: 1px solid black;
@@ -30,12 +30,13 @@
  	color: rgb(102, 51, 0);
  	padding:10px;
  	margin: 25px auto;
- 	background-color: rgba(232, 180, 102, .75);
+ 	background-image: url(../images/grey-linen-texture.jpg);
+ 	/*background-color: rgba(232, 180, 102, .75);*/
 
  }
  .comment {
  	margin-left: 10px;
- 	border: 1px solid black;
+ 	border: 2px solid rgb(232, 180, 102);
  	border-radius: 5px;
  	padding:10px;
  	margin: 10px auto;
@@ -62,6 +63,9 @@ Style for profile page*/
 	/*background-color: rgba(232, 180, 102, .75);*/
 	background-image: url(../images/grey-linen-texture.jpg);
  	border-radius: 15px;
+}
+.greedy {
+  margin: 25px auto;
 }
 .event {
 	border: 1px solid black;
@@ -128,4 +132,8 @@ stylize any heading tags withing white-panel below
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+footer {
+  margin-top: 25px;
 }
