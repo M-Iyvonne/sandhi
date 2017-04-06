@@ -16,10 +16,10 @@
         <button type="submit" class="blast btn btn-warning btn-lg">Post New Blast</button>
     </form>
 
- 
+
     
     <div class= "post">
-      <% for(var i=0; i<blasts.length; i++) {%>
+      <% for(var i=0; i<blasts.length; i++) { %>
         <div class="blasts">
           <h3><span><%= blasts[i].title %></span></h3>
           <h4><span><%= blasts[i].subject %></span></h4>
@@ -33,39 +33,43 @@
             <% } %>
           </div>
 
-      <form class="form-inline" action="/comment" method="POST">
-          <div class="form-group col-sm-8">
-            <input type="hidden" name="blast_id" value="<%= blasts[i]._id%>">
-            <input type="hidden" name="name">
-            <input type="text" id="input" class="form-control input-sm " name="comment">
-          </div>
-          <div><button type="submit" class="btn btn-warning btn-sm">Comment</button></div>
-      </form>
+
+          <form class="form-inline" action="/comment" method="POST">
+              <div class="form-group col-sm-8">
+                <input type="hidden" name="blast_id" value="<%= blasts._id %>">
+                <input type="hidden" name="name">
+                <input type="text" id="input" class="form-control input-sm " name="comment">
+              </div>
+              <div><button type="submit" class="btn btn-warning btn-sm">Comment</button></div>
+          </form>
       </div>
       <% } %>
     </div>
 </div>
 
    <!-- // beginning of Google Places Api // -->
-
-     <div class="col-sm-6">
+<div class="col-sm-6">
       <form method="GET" action="/places" class="g-api-form blasts">
         <h1>Yoga Studios</h1>
-       
-       <!--  <label for="query"></label>
-        <input type="text" placeholder="Zip Code" class="js-keyword"><br>
-        <input type="text" placeholder='Zip' class='js-location'><br>
-        <input type="text" placeholder='Radius' class='js-radius'><br> -->
+      
         <button type="submit" class='btn btn-warning'>Search</button>
       </form>
       
-      <div class="gApi-results">
-      <% if(results){ %>
-         <div><% for(var i = 0; i < results.length; i++) { %> 
-         <div><% results[i].name %></div>
-         <% } %>
+      
+        <div class="row">
+        <div class="gApi-results"> 
+          <h1>Hello</h1>
+            <% for (var i = 0; i < results.length; i++) { %>
+            <div> Results <%= results[i].name %> </div> 
+            <% } %>
+            <div> Blasts =  <%= blasts %>   </div>
+          </div>
+        </div>
       </div>
-
+    <hr>
+    </div>
+        </div>
+    </div>
 <% include includes/footer %>
 
   
