@@ -1,6 +1,6 @@
+
 <% include includes/header %>
-<body>
-<div class="container test">
+<div class="container-fluid test">
 
     <div class="page-header text-center">
         <h1>Profile</h1>
@@ -60,31 +60,31 @@
 
   <!-- beginning of Events -->
 
-      <div class="container bg-event">
+      <div class="container ">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 greedy">
             <form action="/event/id" method="GET">
-              <button type="submit " class="btn btn-warning form-control">My Events</button>
+              <button type="submit " class="cushion btn btn-warning btn-lg form-control">My Events</button>
             </form>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 greedy">
             <form action="/profile" method="GET">
-              <button type="submit " class="btn btn-warning form-control">All Events</button>
+              <button type="submit " class="btn btn-warning btn-lg form-control">All Events</button>
             </form>
           </div>
-          <div class="col-md-4">
-            <form action="/event/search" method="GET" >
-              <input type="search" class="form-control" placeholder="Search Events">
-              <button type="submit" class="btn btn-warning"><i class="glyphicon glyphicon-search"></i></button>
+          <div class="col-md-4 greedy">
+            <form class="form-inline" action="/event/search" method="GET" >
+              <input type="search" class="form-control" name="search" placeholder="Search Events">
+              <button type="submit" class="btn btn-warning "><i class="glyphicon glyphicon-search"></i></button>
             </form>
           </div>
         </div>
       </div>
 
 
-      <div class='container'>
+      <div class='container greedy'>
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-warning btn-lg greedy" data-toggle="modal" data-target="#event">Create New Event</button>
+          <div></div>
           <!-- Modal -->
           <div class="modal fade" id="event" role="dialog">
             <div class="modal-dialog modal-lg">
@@ -129,8 +129,29 @@
         </div>
        
 <!--     beginning of repeated events-->    
-   
-<% include includes/loop %>
+ <div class="container">
+        <div class="row">
+        <button type="button" class="btn btn-warning btn-lg post" data-toggle="modal" data-target="#event">Create New Event</button>
+        <section id="pinBoot"> 
+            <h2></h2>
+            <% for(var i=0; i < event.length; i++) {%> 
+            <h2></h2> <!-- this <h2>has to stay to keep the plugin set up correctly -->
+            <hr>
+            
+          <article class="white-panel"><img src="<%=event[i].imageUrl %>">
+            <h4 class="sign text-center"><%= event[i].eventName %></h4>
+            <h4><%= event[i].location %></h4>
+            <h5><span><%= event[i].date %></span></h5>
+            <p><%= event[i].about %></p>
+            <h5><span>Created By: <%= event[i].createdBy %></span></h5>
+                   <% if(user) {%><p><button type="submit" action="/event/delete">delete</button></p><% }%>
+
+          </article>
+      <% } %>
+        </section>
+    </div>
+    <hr>
+  </div>
    
 
 <% include includes/footer %>

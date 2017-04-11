@@ -1,886 +1,886 @@
 {
-    "html_attributions": [],
-    "next_page_token": "CvQB5AAAADfcp9uLPcb25_fAoFcBSIzHQytyNPcxqhx-qRIfudHpdmmVR4HVxYVoNPxJZkr_rgV9XgCyUqb0SPTpoxca0VjFidFfKf8rZzekWmrr8eqXWiF-BEfZmyhZHbrkEY9sieppxkLnLhfVOLJZ5V2LWnwiodkCb03KnPFe6Et-xgowrL7jXmLJvGWJAh6oP8jLeDo74O6BxyDv5HPKMSFWwEGKadm5fLNp6xQbXg042EvEq-zWfBE0hV3Y_BjAg_uz-zynfaWe4UBs6SlJD4uOWVZwr5ywa-oeDfhRGw6Vf8A5kFWIGrxj21fw1gT61ZoMIhIQjuzusf8yJiqplGo3yD-eXhoUZppg1plVWQqXS5oRTNpnArUHiW4",
-    "results": [
-        {
-            "formatted_address": "950 West Peachtree St NW #210, Atlanta, GA 30309, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.779664,
-                    "lng": -84.3878387
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.7810128802915,
-                        "lng": -84.38620921970849
-                    },
-                    "southwest": {
-                        "lat": 33.7783149197085,
-                        "lng": -84.38890718029151
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "909e61ec2bcf5bf4f2c125c94c76008b45afcdb9",
-            "name": "evolation yoga atlanta",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 668,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/103979767521707147573/photos\">evolation yoga atlanta</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAM7xGfmXXlhGsNlbiwqzgQftRkb8VPeETWc3LOrH3myPHrJv5FvssfEFvKihCocTe78-2EjzMeh58_5w_SNNeBRNpVmbQxuu4OEawETseRoc_gRCqa81qu2NfgcF4yV7F0LZqsqsovzfjm2tpBXPnfefyt5QWR1fYq6mio0gqjK4EhD0PoDs0JIorttWsDzmsTMAGhSXA4HwZoo8vtRPQfGWVGcsVneXxg",
-                    "width": 1000
-                }
-            ],
-            "place_id": "ChIJ0yYAkmcE9YgRQqiT1geCiK8",
-            "rating": 5,
-            "reference": "CmRSAAAAdjwcGzBnTzVWLJOlpZ-EdoAaxZfsB6lmTEQzBkCqghl0aMb3PuXF_Thu4isaIxe6iEsfCHjf8WgmsAxbFp-l3jC14D6HsWCuCY_MhIhhR9s49TA83y6_MRbVv-kqZPKyEhCf9DxBxKSeCzNySHmF3BZuGhTWJmZDkZPWkVOIdwiD9wthT6USgw",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
+  "html_attributions": [],
+  "next_page_token": "CvQB4QAAACdBrg1XkYLinnyhCMFMatxQYMkGAMmLSrhRGpVZ-KsjTj0q30emuTua9vFf1TeXUcfQe24xPX2mWFw_ys2tklmEbcRQRYY5UTSqnH25qpyU0qD4_ZclCEBJzxZ25dYOJpGc0i5e9Ms5Hd5y9ZwmoCGOABbv6q7UitSyOYOjvg4xoRktlRVHstP_0yu5qczEIomd0FwUUGFIUJmO9KhGcqQi8QvQ38CHhcIhxFV3ReKnNePY4GPRWAGc8ZgXThQJhj8X39KfEMX8nn-DucVDV90JBZLzVk7-S4aTBTv_l8Ei_qmKemCHvmi9sapGkXVx7RIQJq1CnJXqSsdCavK8VJJdchoUKtcxit8_UXuTYLF-R24HJmfNzWU",
+  "results": [
+    {
+      "formatted_address": "950 West Peachtree St NW #210, Atlanta, GA 30309, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.779664,
+          "lng": -84.3878387
         },
-        {
-            "formatted_address": "1065 Peachtree St NE, Atlanta, GA 30309, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.7833663,
-                    "lng": -84.38318819999999
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.7848399802915,
-                        "lng": -84.38203476970848
-                    },
-                    "southwest": {
-                        "lat": 33.7821420197085,
-                        "lng": -84.3847327302915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
-            "id": "67015deddd6070b12700221cee1e706bb7885003",
-            "name": "Exhale Atlanta - Midtown",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 336,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/112186501645990726503/photos\">Exhale Atlanta - Midtown</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAFoTzpeG3gS9ljtMg9DUEJJFy-bbyEq_5Kmjx8bcIIx-FS56TwaIkO0Kut8u_iBySct0EhjefUfUiCoG5oAFDtZdxMbNE5Ysw8QimFWL5Pqyw5OTpEvc8fJbRChLuqJPZiO8wUi5yVDyj5QYp4et51I_AOzUQaTVqmjFPe-C6dttEhDTUPoCRdqkyO7BfhnBtTgVGhRNvPEVz8okosF9iTI1mUIxU-HDsA",
-                    "width": 747
-                }
-            ],
-            "place_id": "ChIJW_dJAkME9YgRy3wmvMtckFA",
-            "rating": 4,
-            "reference": "CmRRAAAAkVvt0ynj5ewMsODbkCwq966bORax-_ZI1mm437tFyoWC1oRYUQ-WW-aAtLukuCSZhO5w5ruT_Rka9sCKkgRN1iuhT-k_qMJFmSkFtb80ERvLClRHWCItsqnN3WtbEbmQEhDLp1IgkBVfv-Rvxy7swv1rGhRDCKkrjki5PlepH5THyeYYshAxOQ",
-            "types": [
-                "spa",
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "1530 DeKalb Ave NE, Atlanta, GA 30307, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.7628777,
-                    "lng": -84.3375338
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.7640013302915,
-                        "lng": -84.33613976970851
-                    },
-                    "southwest": {
-                        "lat": 33.7613033697085,
-                        "lng": -84.33883773029152
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "21e7b4d8352f616acf31b219eafca21f5a28d22e",
-            "name": "Tough Love Yoga",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1200,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/102050999802160414533/photos\">Diane Jalbert</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAOuwBQWSCrXGxuyQzdYJkoKr9wqMkun2YgghY0NLSgR_WwjjqbtA1zRDEkgYDsxeDyIzaRtif0NZG1nnr0FsgO7nZI1Qab0sn_6oIpJIx972UekgF5-fae9OgVh8Wfvt5I2JWpPr64dUVMBEejb0O5PdcjPiFPptNeEMTSgoJdLpEhA21Cf61DjwHhPEgS6WFW-bGhReWzF1k3BMTVJ83Ru_02V8KI6BOQ",
-                    "width": 1600
-                }
-            ],
-            "place_id": "ChIJI2v7u7YG9YgR_zi0RpBAfWw",
-            "rating": 5,
-            "reference": "CmRRAAAAkaAZ84e9hkAUZnTsq1ehg-lp7MXo53XDjj3rgq_g-Xsi2Gj-ZM0Sh-TtBEWWW3F_abqAgZ4T-xB5A05npuWVNNy_Tvzm42VcmlU8nNDhBJOubTX2E5XEjHre9FI7Rn_lEhA8kKtNdEfdpRN5PFVLjag4GhT1Oc5sFP88k4av0uPnlGIp7n4Gmg",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "2140 Peachtree Rd NW, #230, Atlanta, GA 30309, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.81294249999999,
-                    "lng": -84.3938727
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.81429148029149,
-                        "lng": -84.3925237197085
-                    },
-                    "southwest": {
-                        "lat": 33.81159351970849,
-                        "lng": -84.39522168029151
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "31a54558180f40603a2a76b13c5fad5949017205",
-            "name": "Atlanta Hot Yoga",
-            "photos": [
-                {
-                    "height": 561,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/113295593913426144273/photos\">Atlanta Hot Yoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAL6RsbTF37qSWgbnSIjHJEkOMji4B9IXE9Xfv_Kvhx9qAmIQO76oR8r8adTe0C8ooE7h_3n_M15j3g6AMy97vXeA2jjc3T--3vBu-jkjamUXKGqGjyUZHflqJgfp_OF_G49SLiBlSA-iEj6BvGDJHwzWXRWw420ldj-2X706wmRXEhC54s_5kQ-12RJiT8mSZHdlGhSfDWxe8Fa4SUfoDGTum_HNaPmt_g",
-                    "width": 472
-                }
-            ],
-            "place_id": "ChIJM_jvlKgF9YgRWszXq9u8z7M",
-            "rating": 4.4,
-            "reference": "CmRSAAAAccbqsYUKaBc2uJLR1g73DXJwE3-t_vLIv3I-36ESdmdVGnB8hXN5pbp_2VL8jqkpYFadFERBJ98UrH4uvEOCu3VHSZFqHysTeAr3YSND381EZsbPdL6jgxZv3hR6chVJEhB8UWPxov5kVtVpz26t6LefGhRPhuOsx0Fl9OHNfeLWfV_cndagMQ",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "1376 Dresden Dr, Atlanta, GA 30319, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.8609535,
-                    "lng": -84.332774
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.8621446802915,
-                        "lng": -84.3313924197085
-                    },
-                    "southwest": {
-                        "lat": 33.85944671970851,
-                        "lng": -84.3340903802915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "14ef413b1fbb2dfe10787d931269f7b68b1e02e1",
-            "name": "Infinity Yoga",
-            "opening_hours": {
-                "open_now": false,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1536,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/102595655595063558698/photos\">Infinity Yoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAALwimSLNXZp5uAaX9VNOBpgN5zHMMm7JeOOC01PcjvguuidzJmo4Hsnqmp69oXaLUpgI-Zh1WKEqgUrsIMoM7qD58mw-albg8CKxwrUTGFSQRH_a88xoTh-mPwPGsn8zU94xtW0-yMFrYoHO1LSdUNCvJjEQT3nL5jZUqjz2NTuKEhD8JTpU083Y6q6l_WczIHw5GhSetJRgROppF5jIVSoiPvmSMtDNUg",
-                    "width": 2048
-                }
-            ],
-            "place_id": "ChIJldZLEZYI9YgRelpIMimyXRY",
-            "rating": 5,
-            "reference": "CmRRAAAATKVkmpxOAODwyqYetV0J-jP5fIgQ_B1eRiFCy8L87ofkHVQd0kwue7zA_rvAYUjqu0Wlzbig26LlQibTftUeJHuaeVpclqRZRpozIgndglrOQBB-SpBImEoGRsI76RdsEhAM5fL2C9z46z0CL8_K5a0hGhRoP-FNf0_hdyH0Kgr5XIO3cVPNRw",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "1891 Howell Mill Rd d, Atlanta, GA 30318, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.80670780000001,
-                    "lng": -84.41254219999999
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.8080738802915,
-                        "lng": -84.41133636970848
-                    },
-                    "southwest": {
-                        "lat": 33.80537591970851,
-                        "lng": -84.4140343302915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "4c00ae9898bd6baf2e279b3b35fa27ab74acc399",
-            "name": "Westside Yoga",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1356,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/108500729754660088661/photos\">Westside Yoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAGMuZZpn_YefIx6HCIomn5_74p5yReyyqT6FcSngMqo_-1D0J12fuo_rx_TxCRWx7Fhh3e1jm46LSvTXB4pGaK_RMRBER3FQo_8m_B2G4hRfOf0-YDL-VG-ngmzh9oTigt7vHrQhlEoyAIFW4u5D55MP1ux5CIPqB9C5NBysdiBmEhDGeI24EpIGkZzPXaikqTTgGhSfqjVNOaMO2f6XUZcNRE5S4siYLw",
-                    "width": 1358
-                }
-            ],
-            "place_id": "ChIJ6R5jZB4F9YgRB_F4dA6j8Ig",
-            "rating": 5,
-            "reference": "CmRSAAAAhJ98fcyX764nhj7bAT3iAVxn6SoIcww6CvKmbAQR_z8rGCZVnOc5ocs6nZQ08oU6zIWaYjtaVIoeE08Oe8ihJWkmMxkQiKUqj9S0XqRBGlneG9XNL8_YRK8efybLeHRBEhCQpDzBAxnfJQO__XkcxPwIGhQXkYWpP_pi9jZu7bDkqm1XdL8E5Q",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "464 Cherokee Ave SE #201, Atlanta, GA 30312, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.7419562,
-                    "lng": -84.37328459999999
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.7433283802915,
-                        "lng": -84.37202606970848
-                    },
-                    "southwest": {
-                        "lat": 33.7406304197085,
-                        "lng": -84.3747240302915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "3842ff2f5dec86b8f0aa9a7f8655d542a7bdea92",
-            "name": "Nirvana Yoga Studios",
-            "place_id": "ChIJW3nuH_oD9YgRA9C7oj44D5I",
-            "rating": 4.8,
-            "reference": "CmRSAAAAmiUYGrjAy6Zrc3wWtzznjFOua_dvM7YyxFfNtH27jaJjC_h2IHi8hy71otqT2aBtRE6vqJY2iPmssiVgCWW-buLphXP2ePMfToBdDKj0Xkv_rHfmrfzjSpzREfStss8eEhDrDBsO1_AkGONvSn0H6ERJGhSFdIjH2-jZGHF0JNtGYZjcA4n2Bg",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "200 Bennett St NW, Atlanta, GA 30309, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.8110892,
-                    "lng": -84.3956898
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.8128250302915,
-                        "lng": -84.3943569197085
-                    },
-                    "southwest": {
-                        "lat": 33.8101270697085,
-                        "lng": -84.3970548802915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "6518dea3001f2c686f139ac4544244b5b5cdd145",
-            "name": "Active Sol Yoga",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1638,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/107534737501339286313/photos\">Active Sol Yoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAJwxMiOi0CCCpmsbNBSHDykZ8NmE9FxH8-fv_ARzzu8D7TgVhhWSodwFzq5OAn8Nfqx6wEiGA91DmUlgle1KaInNLsjmkQC0K8aGoP6GNJKQy4-f3-z0jvR1eavQiOsz_c5J-NAFpEnsX8CHx390e4b28w_X6Te8DWJwFC2WxgX1EhCZQXpsm0uoraNps7sxnapmGhRJI9Mj7Xn2IKzlExDVCiGMV3C-9A",
-                    "width": 2048
-                }
-            ],
-            "place_id": "ChIJhfNxLagF9YgRjh1H3u3MTFc",
-            "rating": 4.8,
-            "reference": "CmRRAAAAb23l6AQDOPXx0V3b_X701itWkZDhFvNheyei0Xo_DTyBfBpWTvjf9CO7Vmu55X4pc8SamRUN0uaLI7_xzOIdKbaLYF7_ANQcnv_CXB9xHFGnnnBMPLkSagbyHFPDsKWzEhDyjCpJXHyo_jDNMHaBxxhrGhRNpvs6iu99Ll9SW1RA4JtHpWAXIg",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "828 Ralph McGill Blvd NE W2, Atlanta, GA 30306, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.7681275,
-                    "lng": -84.3601781
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.76959418029149,
-                        "lng": -84.35880756970849
-                    },
-                    "southwest": {
-                        "lat": 33.7668962197085,
-                        "lng": -84.36150553029151
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "572f8a1d69ff414c7a0ab1b147b63d9b71299060",
-            "name": "Sacred Thread Yoga",
-            "photos": [
-                {
-                    "height": 2048,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/105964754710090482303/photos\">Ben Johnson</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAALJPwQSlvWeRnWtRLWk5egg_r-UH5dIaPpEZ_jYOG6TcowYpfYzJASwCXUZR_tDC-Pcgfswb5-S6dXLRD8B9VVNXuioXQVpTCfZamUgVhR0bjBTVYJZkb8C9p1KNbmeiDGuvrGXEvN42FF9Q-BEDpM7Dlz_00S5ioZbbLTV8H3bMEhDSW1GWdhMuIUxH9dN1jvJzGhTIHpxfTrtJlxRLVRQe5ZZgRvTF0g",
-                    "width": 2048
-                }
-            ],
-            "place_id": "ChIJ_xl0swQE9YgR00jozGChHlE",
-            "rating": 4,
-            "reference": "CmRRAAAACvCE1EPDiHtbA8xs-DNledypEDJzDxSAYENTbzMpjGIDwwb_Vra6U5PkBAdztqIQ_3IESTHoavP3FN-pdk43Xi0ycnYAA5iMgEnr51A1YYCzfLUmFe3ZyQOd9xLl8exFEhAyGpZ2rw3C9I4zH32zPkX8GhRbpj2_CnTF3tpe5KLi-kpTzm1Tdw",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "900 Peachtree St NE #302, Atlanta, GA 30309, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.7793162,
-                    "lng": -84.3844203
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.78065908029149,
-                        "lng": -84.3829776197085
-                    },
-                    "southwest": {
-                        "lat": 33.7779611197085,
-                        "lng": -84.3856755802915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "046b538463e592bf7c90879cfe2fc073d2884edb",
-            "name": "Onlyoga",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1125,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/102228542629442607017/photos\">Onlyoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAACqbTDxwjc8o7QzGseuzPU1pfWumIOgIC9Uofr1FxHGAa1WpcBHJKMPB16bOBvx9ZHZaxQaYnvuSugjRsyM3dp8cSdvtODQW3t1ZuESy7MSAiyBlqUfmxlwQnoSHn5z8dBRXor6UGt7KRu9E4R6NLsamTlf8Rc5zrE2tqzJO3vdPEhDsl3JxME7yuxImSHO_UBfyGhQuTaWqFl4EmFVN5GHiJAOFM6lG0Q",
-                    "width": 1500
-                }
-            ],
-            "place_id": "ChIJmfPPP2gE9YgReBkiUpgYs1g",
-            "price_level": 2,
-            "rating": 4.8,
-            "reference": "CmRRAAAAHeJK5FhN0bsAN3I0DcukORiYh9NDUfIbJwL1MHrnWyphV4jYqmD_Ft1GiLsHeUuw0C-JzRO_EW5coYgNco9C_cUAu_sT0yYuq9hYuZLn14-xUIwkn1VoRTMCtvxn5A7zEhC5Bi0mXYrrXyxepEPFb4aCGhQPxO9oWsHpyvGV49yYPaERHwl92Q",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "655 Highland Ave NE #2, Atlanta, GA 30312, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.7609828,
-                    "lng": -84.3659685
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.7625087802915,
-                        "lng": -84.36461511970849
-                    },
-                    "southwest": {
-                        "lat": 33.75981081970851,
-                        "lng": -84.36731308029151
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "eb48e9928a69ab02d39ecffabdf5704c73e74d5b",
-            "name": "Infinity Yoga",
-            "opening_hours": {
-                "open_now": false,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1016,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/112575009085519713160/photos\">Infinity Yoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAE_eAf4BU8Va4NNfGtxQQ5dD_Cc66s63lDvVI9-pyStTYsyZ2v9fV48NiU0lSu9mefU7dUisHPhBvQhIKO-rLo1WGPFTq77qFe42euI7iEJzqBKy5UWnhptL7n87GqH2iXCHRTi4vo2Z9E8zNagBxXr895yECJG_rzK0IeSkIH-PEhDiNp051rn8qMjGPSP8xx3wGhSUEl3ZRv1Q-SqpXOSC1w4dbymVqg",
-                    "width": 1017
-                }
-            ],
-            "place_id": "ChIJR-mjkggE9YgRcwM8wCA9Rtk",
-            "rating": 5,
-            "reference": "CmRSAAAAf0sGyAHfjo0uTzAzf5hIlMs0GKFhizCSs99iIHamL2vp0P2GSGcUpHKskHJowxhVMHinWu2DpICNOYXVBMriM1RFBDCEgAW8638J9G1S2nqDDHTK4G2DLzyc2xhY5QqnEhBJY4jXymBsLPtnhu3mK5fEGhRmr_hQ3Up8kfpf5ZqZ-1h4LGFYPQ",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "3872 Roswell Road Northeast, Unit C4, Atlanta, GA 30342, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.860342,
-                    "lng": -84.381845
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.8616631802915,
-                        "lng": -84.38038406970848
-                    },
-                    "southwest": {
-                        "lat": 33.8589652197085,
-                        "lng": -84.38308203029149
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "7b06bbdbb516f5ec57e25bd8246202f864647577",
-            "name": "Thunderbolt Power Yoga",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1072,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/116445501179400179898/photos\">Thunderbolt Power Yoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAMqD4j1Vk03IX5RbxsBrwPqbYyIHPJYiuAh7OXvGs24tbDs37aoRDewtnfPRNwT-c-kqVQiEle0zl-fV0kLw0PKNF5sqyQX6Ct_jW9xhnqm_TU24-K0t6aN0A5mtkV0Ie9x4psbmgRrDo1IFSqjRqqkg2OzuqOMWEyqqkGBQ881jEhAfNSF6Mt-J3DpSEfuOwwWWGhSCsh7KNj-GfRhgtdoPuhqnfUYO0Q",
-                    "width": 1073
-                }
-            ],
-            "place_id": "ChIJHRxVMm8P9YgRUTilU16PJPw",
-            "rating": 4.9,
-            "reference": "CmRSAAAAZRMY4_pA7EhhESvUFDo-LJbu9Fcw_GN7sZLxtK-IStxgk9l5voIYNhSpelwSI75pyAzs1GYeFEg5lc8W8a2L3OCTSH8q1-6ZgkQL0RCu2eh0ejoQr5KrraUKL_L6rxaAEhAUiyfbdXRVIcjjgVNedzC4GhSoNwbSsy5F99Rho6jqPqNbAxseGg",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "842 North Highland Avenue Northeast #5, Atlanta, GA 30306, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.77750810000001,
-                    "lng": -84.3529409
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.7788830802915,
-                        "lng": -84.3514204697085
-                    },
-                    "southwest": {
-                        "lat": 33.7761851197085,
-                        "lng": -84.3541184302915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "db7fd169b0e3c045add1dd3a56010ef12df10f48",
-            "name": "Highland Yoga",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 2448,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/101661880982317688860/photos\">Highland Yoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAADndWjf0ERoFm28aTVXf0tywued963Y10-k5hsGiHTawcz2-qR1DNxVeHTNpOlGls6SIEx_OG04kZszJlvHMHsQwmFtEYMnlk_fk7J-nOiKSTwKWWPffVKZHTrtgLkmPt-f7pwBQ6jC8HMYjfhjFH3OZX9fOdxRTEJxFf0jKaBNqEhAu0JUd_ydg_YRhYUJy89TaGhR5W-4hpjEHlxGOjKlbidQ4Z0yQKg",
-                    "width": 3264
-                }
-            ],
-            "place_id": "ChIJdac2aqAG9YgRZynFn7o5X-I",
-            "rating": 4.9,
-            "reference": "CmRSAAAAy4W3FdvC-2iK8ZvHuoQVZO2l9c3yGr_xngIDm4wAyhU97ymtVAy7TgMhDS6C9tKrq64QBsAin8a6NzPVPqPZu0gFjyJV4sUVZuXnl4z7XR6TnLKF3G3LDwf0Zu2Ltm6eEhDrlcWHQ3hFKpRdbRwDqjdQGhSOgA9kbprWBOJ5B0hsPdtRChh9tA",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "730 Ponce De Leon Pl NE, Atlanta, GA 30306, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.7744582,
-                    "lng": -84.3641641
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.77580698029151,
-                        "lng": -84.3625796697085
-                    },
-                    "southwest": {
-                        "lat": 33.77310901970851,
-                        "lng": -84.3652776302915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "e873ce897782819b9851854617b9e6af32fe518f",
-            "name": "Be Hot Yoga Atlanta",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1125,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/109519826019831191200/photos\">Be Hot Yoga Atlanta</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAACJ4cLbW1rAM0Jqj70pka4LbXbXpTau3oJwaA9UPWkps7GQZmcNvWdfpUZ-1wzueqFdvXH5GzS11bGYqhq4BGpMli2V6Vq9pZ0t_vlFfp1Ko9RaMg3XL7cUPWUNaql4NJRjG-mnopAq0sWbjP07R7S3Qx7nXDVorLc4v-Uyim5uaEhAkjuS2dmmTt8Ip74rtgcKHGhQt5HvURDdPk0k4v4_qAmYNfDNGkA",
-                    "width": 1128
-                }
-            ],
-            "place_id": "ChIJkVRl3BkE9YgR-DAhpEMADqw",
-            "rating": 4.9,
-            "reference": "CmRSAAAAcxNcm1fsocHvQEootgWDzfZU39kum1f5QEOvjn0f8-bvxNAnVh0ncUO4PtPV3DVRkPnQh4S5hn_Bf06q0SRgpgAGOKRoPSxc-Sug6oTPFkq6c7M3W2NhYiUNYo8GiF6wEhCliblgQTaAYXJ35vek9tL8GhQ2oFQZVmv4r_wI8GTV5dMYMsEFlA",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "439 Edgewood Ave SE, Atlanta, GA 30312, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.7541494,
-                    "lng": -84.3731322
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.75558703029149,
-                        "lng": -84.3717825697085
-                    },
-                    "southwest": {
-                        "lat": 33.75288906970849,
-                        "lng": -84.3744805302915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "3e35684af1b1eefd9c5ee21bb7601d54b6b0addc",
-            "name": "Hotlanta Yoga",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1546,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/102948072785434764061/photos\">Hotlanta Yoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAPGtZ88l-ADW11wFZHPV27G9IMhcVS4obQ21en1nNRzVID8gtHFnw_xGTo9Z1Nub3MdcBJItp4xGb4YgkI5txhcnVhTUunyQubiqQHXEEdRkrGjsesF8CQ7aqHVoYcc5Lc24gtDygmzbAkeNn1aan4JrHXmCbU51JX_Ad7xxuYAUEhC1vF_Vi40sg39KQNdz5iNhGhSLLSU6FhCUSRppT9eqI9tvSeB14A",
-                    "width": 2048
-                }
-            ],
-            "place_id": "ChIJ00sW8PQD9YgRRvF57jObvU0",
-            "rating": 5,
-            "reference": "CmRRAAAARxMF2MJ6FkBVF5mDKMhA7HfrmmSIJpDO9mHxUIolKDWR2MD9uV-56dbWsupmUumIfvFCIVR6pGmVddLTl0S4OCyR3i2Dh_ppy-jJlLsONHwksjpZ8v4SNHlxgpXMWDYKEhDXn4C9U96FAlSWbaddokRzGhR6OFsWqjl0z_zdnGcS-pEVNQ3hEA",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "27 Waddell St NE, Atlanta, GA 30307, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.754441,
-                    "lng": -84.362549
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.75576488029149,
-                        "lng": -84.3613434197085
-                    },
-                    "southwest": {
-                        "lat": 33.75306691970849,
-                        "lng": -84.36404138029151
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "250942a5e90b23cfc3a4f3c11062882044f5c57e",
-            "name": "Ashtanga Yoga Atlanta",
-            "opening_hours": {
-                "open_now": false,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 909,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/100497737706610566732/photos\">Ashtanga Yoga Atlanta</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAC6pPmHH0Ya-m90tAYiGK83vXj705NUZasOYVu32mQeblyWTY3wJ-FfJe1ZFdjcZiX-e_Fa0jc21RGtk1Nq2hH5SlagOhVqCRC9n3RhUXr8SxBD1na1g4VWos__pfyLqQRrPuzfoM3qJQJlx02I0MgrKf88UXvcR6C5uvm99gy6BEhCK0HVQ619DlW9PNBiqezsnGhSMrxtEBbQ_TUZcqqVicT7ZYkuGcg",
-                    "width": 1369
-                }
-            ],
-            "place_id": "ChIJ58pOrfkD9YgRg5rxP2_7IEE",
-            "reference": "CmRRAAAA3pt0UsiXdQ09RZ1PBLVbN-iinMLjTSP8v6fQnLHUcx4nUrAN8nx869b_D6HOrll85prbVVinn3g3ahRflyBAx6Ks3EpIDAjx3ilpy-aE8YJ4NISaV2247oECN1tEhzJyEhCB-GOW_YjYwuqA9kal8sR1GhQs5nZcy0R76D2SEioNl2R3wVjHhg",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "892 Jefferson St NW, Atlanta, GA 30318, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.7759526,
-                    "lng": -84.4165539
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.7774191802915,
-                        "lng": -84.41520401970848
-                    },
-                    "southwest": {
-                        "lat": 33.7747212197085,
-                        "lng": -84.41790198029149
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "3f1989f64b1cdcd6ba73a550f4cd92a9f05bf2de",
-            "name": "Atlanta Yoga",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1619,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/113026173381971378661/photos\">Atlanta Yoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAPrp2UcC8px1xptjdLcD6Van9q4sKePeBhhNngr7Q4lYmY3NPEBmga_T35nukORLIzmA-2GRWr-nwA_1C8aT6rZthjf08T5BhfMFAfCq77DyalL0UJri9T6_iYRFcao-wd7cxS0l6pwKDLv3E0ISq80gUq9UV9YuolzmkXQO75LkEhBdz6Q3ORqdF9JUJwVRU5ZxGhSIwymfZqOp_eVhyi_DRzRszqccIQ",
-                    "width": 1621
-                }
-            ],
-            "place_id": "ChIJjUjr3pIE9YgRWz1Zx4RZ7eE",
-            "rating": 5,
-            "reference": "CmRSAAAA8BIIo3z56BQS1i6x4qyZq7zyEd7-6YeUReLDslewksXQ6kQ-V66nBz40ee5X6TAqRi8fc7f0Ib3VucZ4nyMH5pGwA3JVg_mTH3w3Y9sVI-A9ni1y1FfEV2xYSPD7pH7LEhB9beJ0DsXaE2fh5H5Nu_NBGhQv34ayifq4_VZFgRXdth0PhUSqgw",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "1213 Dalon Rd NE, Atlanta, GA 30306, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.80469300000001,
-                    "lng": -84.33996239999999
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.80613848029149,
-                        "lng": -84.3387285697085
-                    },
-                    "southwest": {
-                        "lat": 33.8034405197085,
-                        "lng": -84.3414265302915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "8f14df19fa91bb25e66d51c90d23013edc455be8",
-            "name": "Balance Yoga Atlanta",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 1361,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/116792701802641247466/photos\">Balance Yoga Atlanta</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAABwaXhOxNzfZUYU-UmX4wfo71gZ-SLO2SyjI--dgSs612RNqiXg3wZ3CfgobqX-WUAWeybY1AcePpoQgGoEnNbiFLqYurXcPbfsAtfvKJ_XtvxS7YWKRonqw9cFCCPzO98W8w0VYvULKdV7x43GX-uy6AD8qo44q0RkzLKXXmQcHEhDakbyhTKSdYL3Qlc4caxl_GhTr1Fb-ISLWZ8DwlHxEdag_PyeL6Q",
-                    "width": 1363
-                }
-            ],
-            "place_id": "ChIJwWmizfMF9YgRE19WPeiBqPk",
-            "rating": 4.7,
-            "reference": "CmRSAAAAYqM_So4ShSTvrrw14od34fbftrMPusxrAvhHWiRIADUk96dE4AazdRn_a-rGylCXHbLFOq0gElvKDBd-gyvFluBpkaP9R3oS6CuHad7nhmkwIvAdoMIIB1QuqWOoPqZGEhDl-Yh_63iEY3SQn1cYTAFuGhTXJLjUxBfun0C4fBS8GKNd6x1OCA",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "1681 McLendon Ave NE, Atlanta, GA 30307, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.7646499,
-                    "lng": -84.33240459999999
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.76609553029151,
-                        "lng": -84.33105541970848
-                    },
-                    "southwest": {
-                        "lat": 33.76339756970851,
-                        "lng": -84.3337533802915
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "78cbb1f8012e6ef53adefa18ecae0aac1941c826",
-            "name": "Kashi Atlanta Inc",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 2113,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/112590934007542075457/photos\">L Craighead</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAG-KpNGfeofE2dkxg6wGOypMbYDQ6KFlD3HzseRNFwxrJMSNV3NKZdcI9MnpfEn4kU3KBmOPgIRMRNZ2cKWMRp2LO_69B5gn0VAihcYdODE6DGpapBTEgevp5qoD_knfvRkMv0a7wqOZBC9Igqk6bwNXrSLAWDCJkQXKWbFcBYzAEhD5JD2UW-k6sKI6BNnT3MGLGhTJmxjsjXYo_XJT7kvWMCry4z7hYQ",
-                    "width": 3755
-                }
-            ],
-            "place_id": "ChIJHcO1M8gG9YgR5-FV74xaqsk",
-            "rating": 4.9,
-            "reference": "CmRSAAAAI_VGwozllsKThfNV4bAjmbXsZIwG9Ua35Ti_4c5-rXc71F-O4nhMi1R07RPbtDZ3DnHGMsdnIqxVryJO7vnSLzZjI2hD1zMtPPFUN_0vQG-PuWFrO9qPiIcWWVE5LzA_EhAzJKtAXqXSvHYj1VJq5stbGhS63qTvJXILitEP-BwCR_O_lnJ-OA",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
-        },
-        {
-            "formatted_address": "332 Ormond St SE #103, Atlanta, GA 30315, United States",
-            "geometry": {
-                "location": {
-                    "lat": 33.73163319999999,
-                    "lng": -84.37678470000002
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 33.7328920302915,
-                        "lng": -84.3754386697085
-                    },
-                    "southwest": {
-                        "lat": 33.7301940697085,
-                        "lng": -84.37813663029152
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
-            "id": "0348fd217a95bbd5672ba9e0b1c2f53ef5da68a3",
-            "name": "Highland Yoga",
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "photos": [
-                {
-                    "height": 750,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/105892801452733815859/photos\">Highland Yoga</a>"
-                    ],
-                    "photo_reference": "CoQBdwAAAOQ9Q_hqSvv3l5mKIjEHedxlMG5i6zavcGBVuchANE9wE11XQzBEiq8B9YxJzgl9Cvp6-A5uQsFz6OeyYcRdukSbcU7UhFjKcbjfTSw9NJcMkVruxFv24FD_nTXGXO8XTAc_8oMROfGydoqOSwt3Ob2hHhXa6E90jUvOSCdHtUBvEhDNfl6dCSfN8_AMs5zC_PcJGhTvtQpAE7sA6LmK77JyQpIHD_a8TQ",
-                    "width": 1000
-                }
-            ],
-            "place_id": "ChIJr2XEFb8D9YgRgKWHkfZXW9Q",
-            "rating": 5,
-            "reference": "CmRSAAAArhc4anQiHwJsyFHxqtaWMuzQU3AfY4Uv7Zl7jDvNIWKMgBT7v-5zTo68YvfeKjCS3Knkzlg7L4dcrdr1BahGVmjaHvgSo8LH2VIbllzHztipbctx0TRCfUrKK8Sla5SDEhBvA8-YI2ilHyHBCAwIslqxGhR8jKsa9g9nUzvlDCnrklYZE5UOJg",
-            "types": [
-                "gym",
-                "health",
-                "point_of_interest",
-                "establishment"
-            ]
+        "viewport": {
+          "northeast": {
+            "lat": 33.7810128802915,
+            "lng": -84.38620921970849
+          },
+          "southwest": {
+            "lat": 33.7783149197085,
+            "lng": -84.38890718029151
+          }
         }
-    ],
-    "status": "OK"
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "909e61ec2bcf5bf4f2c125c94c76008b45afcdb9",
+      "name": "evolation yoga atlanta",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 668,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103979767521707147573/photos\">evolation yoga atlanta</a>"
+          ],
+          "photo_reference": "CoQBdwAAAFqM92iDjJLsxt_gKIloushbZLwCi426No7FlzeCkHUjmjK6HFRUcaq6mngeDD3J4tG0EKYHN-p6uUaGpit0l6i7WX1-2C07PD0iLOfIsA0Nj-NicM4hNK9TGCReZ4IRG1Wb-x37WL0pd1f2vwRYiXXcNiXldnwjbiQKv9S6oOOkEhAGC7egOUW9hwJlXOtLSOk1GhS-5DAfe_NFA7cX3EVKk4X4bgCQmw",
+          "width": 1000
+        }
+      ],
+      "place_id": "ChIJ0yYAkmcE9YgRQqiT1geCiK8",
+      "rating": 5,
+      "reference": "CmRSAAAATYVUaftFquF-1rHwnaYpjjepTEPD4OjFS1kDpNkR9BiB0Oo4cp0rDljZP2GP0HgixHMm6XY8OXnJ9Fa7U9zgfTQSDoTpAbmDuA7-JT6NHmdpcmOGyjBF_rVAQ0RmLSGNEhDUF2RO08dAOq1PGBtfvWWvGhRMmnx5ob9A5y0e7yQudXzU-unvIg",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "2140 Peachtree Rd NW, #230, Atlanta, GA 30309, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.81294249999999,
+          "lng": -84.3938727
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.81429148029149,
+            "lng": -84.39252371970851
+          },
+          "southwest": {
+            "lat": 33.81159351970849,
+            "lng": -84.39522168029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "31a54558180f40603a2a76b13c5fad5949017205",
+      "name": "Atlanta Hot Yoga",
+      "photos": [
+        {
+          "height": 561,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113295593913426144273/photos\">Atlanta Hot Yoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAAOsvbMd2dCDO6c7o-F2cVMVHu2faVv_sf0T2RJuBlxsti_pbaJRjOPqQ2kdTeqncXGOhqPKqD9w_4q65RVyEwV6YwhqRY_fKgkxyy7xFWEj4v-inJD5K33og4iZTh55DRVozqpLrjs4yjfSq4zWSIqlZD98-jFJhCoVf5-Eh6GjCEhCJRQqoTQx4wZKucZtZ2B2TGhRv8ltKEXaAQnGPf5C0tmoAfRTSVA",
+          "width": 472
+        }
+      ],
+      "place_id": "ChIJM_jvlKgF9YgRWszXq9u8z7M",
+      "rating": 4.4,
+      "reference": "CmRSAAAAEqxmXAtK5Wvp72OfIWlZLkE8CMQgCV4-IPvCD8gG6ah5sevWg_KkTAhabiijyN8h5VAeqnpNBjepC7Mt0HV4Gxo7py-VYQTRox3Fp5XbgukpKZa7BC_ynrgEb4DjN2ofEhC9IbA-mlNj0aHsHhsbRbnvGhRnt7s8yBrg-HYbfWz8gEHpVAF_kA",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "1530 DeKalb Ave NE, Atlanta, GA 30307, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7628777,
+          "lng": -84.3375338
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.7640013302915,
+            "lng": -84.33613976970851
+          },
+          "southwest": {
+            "lat": 33.7613033697085,
+            "lng": -84.33883773029152
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "21e7b4d8352f616acf31b219eafca21f5a28d22e",
+      "name": "Tough Love Yoga",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102050999802160414533/photos\">Diane Jalbert</a>"
+          ],
+          "photo_reference": "CoQBdwAAAKuPRkgIq-Ee_l5mUG5kMKzm6BiAvjG9mFzoTlLHFTFpfq_Cel1vyZxkOgUY8SdHztGiBhDxkZOYjnXB6DGAR89dd7txjDVVN9y5AjIS5jSGq4zDalF_6wyJAhAW5WgD62bT7ouJwlOhJIzczDJ4_x29duk36WVVGlv4QkRv7d0lEhChjiTvNMlEEvxLuQcym5uPGhRKUj5BWjEDsczfmXWYA4ftHBXNog",
+          "width": 1600
+        }
+      ],
+      "place_id": "ChIJI2v7u7YG9YgR_zi0RpBAfWw",
+      "rating": 5,
+      "reference": "CmRRAAAA6FDsZGHhj1UrVrenIhKjQqXYBrHRolSbtKPMhD4Kth5s8ELSfXA1sk_bCGRxUxN-RwLwo6zFYLvZFKkEOQeRsGbGc8sepxvrwhALB72SAznNqSGtCsxbmlYOSeDYmvitEhD5sEIMrkXLb7Eqjz6xlzJcGhTGCqqXy8IxDBdk_3euwnkrlumWJg",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "1891 Howell Mill Rd d, Atlanta, GA 30318, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.80670780000001,
+          "lng": -84.41254219999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.8080738802915,
+            "lng": -84.41133636970848
+          },
+          "southwest": {
+            "lat": 33.80537591970851,
+            "lng": -84.4140343302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "4c00ae9898bd6baf2e279b3b35fa27ab74acc399",
+      "name": "Westside Yoga",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1356,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108500729754660088661/photos\">Westside Yoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAAJfhZ1_mQoLBZhLwjHcUpxrQm_gEVub2vYTEfcvEV2E83wkj1Zegm9W3wrscidLYEER1Bc5RtCHo2Cy-EK-SWQq_L_y5fty5eAcSRyOgO17nqqGfRxvAK4VYFfJyLB_jw3og5JVOaNHi2ru2nHlQWElYguax4sGCQ_G2Dhrb4-B1EhC2WP7yt83ShxyoL-F2E6tRGhSJTbgki7CPwPi9jezL3Lgjht0yeg",
+          "width": 1358
+        }
+      ],
+      "place_id": "ChIJ6R5jZB4F9YgRB_F4dA6j8Ig",
+      "rating": 5,
+      "reference": "CmRSAAAA9gpABJkHTItLtR90XlDz2clcxaIP6pZyL9N5UAhrS1CpTOFqq_OR2gZ7JzMAwdWMKzWyvBaU8a62KZ0parhQQH_hrMpseZ69POkzp3nUW7dpoCdulkzgIlHjiY87PLAzEhAQhlQ2SToXDpZeVfQ6nsHOGhTGQng1BMQTBrpRUovLsCIN4H0z-A",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "1376 Dresden Dr, Atlanta, GA 30319, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.8609535,
+          "lng": -84.332774
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.8621446802915,
+            "lng": -84.33139241970849
+          },
+          "southwest": {
+            "lat": 33.85944671970851,
+            "lng": -84.3340903802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "14ef413b1fbb2dfe10787d931269f7b68b1e02e1",
+      "name": "Infinity Yoga",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1536,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102595655595063558698/photos\">Infinity Yoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAAC966ynULLvi3jX-D5qQsMfzERDrWPmTAIITUNPNjvsUGd9hI2QqzYMXiVx7ZYQrVogViLhjV8xnlddX0m9Au89KQE6wbmsEJnOFlX9eMwBukFIbDEutuTF-tZKf0kmRC75Lza_aQePZLCSL-brZJMAooglPeijcge8sVI-LSAbmEhCPp9ybN904M5gkn9Qei6SPGhQs8rD16aeOhR4xlvrWLtXA8qCKCQ",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJldZLEZYI9YgRelpIMimyXRY",
+      "rating": 5,
+      "reference": "CmRRAAAAsxnk3hV6WO673ozKtLmrlAQ34bGlkHbBwqDnhRdjf6ux96d192vK4KpEsg5PAvvnLwcszcb8adecRvweDwbtyMI9PFnCdQCUQntEcejBTuWU6QbgE_h6KRc-_9tLlaoLEhC-KHdp9AMIgjv3j0-_CejvGhTMsNTLBiBoyWjCALOpWF-DWBRwbQ",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "730 Ponce De Leon Pl NE, Atlanta, GA 30306, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7744582,
+          "lng": -84.3641641
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.77580698029151,
+            "lng": -84.3625796697085
+          },
+          "southwest": {
+            "lat": 33.77310901970851,
+            "lng": -84.3652776302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "e873ce897782819b9851854617b9e6af32fe518f",
+      "name": "Be Hot Yoga Atlanta",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1125,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109519826019831191200/photos\">Be Hot Yoga Atlanta</a>"
+          ],
+          "photo_reference": "CoQBdwAAAFbzxCCE8rdYUowAc6vP7CG5dQeee9SBiJKPlb1tXwvyPlvU268MhEvJPVH_CWli3spqh0YIxfi-uEc9rRvA5Xrz2adCU2sJvy2aaf07stDXenNfomfjkC12qDrePRiQ4aqCf-8XcAZdedy2bt1yCl-nGDbjXVC1tFXOLDuQk7Q6EhAEz_i2Itt3vMmOAJKXlPkoGhSw9zkCgfIJAuI1N4c_xSMyog1AiQ",
+          "width": 1128
+        }
+      ],
+      "place_id": "ChIJkVRl3BkE9YgR-DAhpEMADqw",
+      "rating": 4.9,
+      "reference": "CmRSAAAAmP7vI85UuI_7vb-7H4t4gc7NZSb-e9OHeCEY07_rPxNwPzICLrhR-bbRmyZ1t3JDte7fFtgGBdXHaCU9-RfVNjngh3kKWjJLjCT2RfOtgetBVrSpi_OzZZIkj5jFH0QbEhAZMsj_7m_L0AHyPUcHz2iHGhS12EZPYF-sq7YGql1jb6zDYoiw_Q",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "464 Cherokee Ave SE #201, Atlanta, GA 30312, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7419562,
+          "lng": -84.37328459999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.7433283802915,
+            "lng": -84.37202606970848
+          },
+          "southwest": {
+            "lat": 33.7406304197085,
+            "lng": -84.3747240302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "3842ff2f5dec86b8f0aa9a7f8655d542a7bdea92",
+      "name": "Nirvana Yoga Studios",
+      "place_id": "ChIJW3nuH_oD9YgRA9C7oj44D5I",
+      "rating": 4.8,
+      "reference": "CmRSAAAAEQSdMSivKZCb0e8RJhYTcGLIssnaBDhwqZN63H2ZDZZZOcrX4UNgUQwKHgRu0ysh5Da56demakN2SVJo-ChdtdxUXGJ-3_Ngz3DR6-TcZxsq6-ua6ZDYvgS22IXBA50sEhCgWNhuf037b8VMbktf9vbmGhStwM9YmQFsOkwA876Kz6FLSEdmSw",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "828 Ralph McGill Blvd NE W2, Atlanta, GA 30306, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7681275,
+          "lng": -84.3601781
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.76959418029149,
+            "lng": -84.35880756970849
+          },
+          "southwest": {
+            "lat": 33.7668962197085,
+            "lng": -84.36150553029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "572f8a1d69ff414c7a0ab1b147b63d9b71299060",
+      "name": "Sacred Thread Yoga",
+      "photos": [
+        {
+          "height": 2048,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105964754710090482303/photos\">Ben Johnson</a>"
+          ],
+          "photo_reference": "CoQBdwAAANR9v6dn7IgOW4UaK5kQNrs8ZmFu9lcjeDRX4IM45XFKW4vAAqxjn6yrxPKnqBLb1ZbaDU7qVbC9xzMRe-hI05X_TkMnPiP0Bx-JrQBT30r1K3aZKNxYaGl3w1lODplT28vnuZkB8yVN1wy-X46ABP_RiV6D5xcDyTS8Iq2gG2C9EhACuDtoC8yERf065QoEzSldGhQXYhOnDJnxvor85CEvjoP2UIqUSQ",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJ_xl0swQE9YgR00jozGChHlE",
+      "rating": 4,
+      "reference": "CmRRAAAA9lUmoX0rY1O5Iy11h-8WczaAh9MGvLUskHM0SM3nPhD7NNN5FaUg6rVNSvVpIj_dAY_uE-Pb_2vRmXX9FG7W4E0fZdRhHNqZyZoVNU4yIdV7moYsE2_GFDF_AQYQPhUNEhD5M8IM4_WSPhoa-8NNU2cfGhQGxsKh9DN7PqJuXcf4U2lM7g29RQ",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "200 Bennett St NW, Atlanta, GA 30309, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.8110892,
+          "lng": -84.3956898
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.8128250302915,
+            "lng": -84.3943569197085
+          },
+          "southwest": {
+            "lat": 33.8101270697085,
+            "lng": -84.39705488029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "6518dea3001f2c686f139ac4544244b5b5cdd145",
+      "name": "Active Sol Yoga",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1638,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107534737501339286313/photos\">Active Sol Yoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAANljWXrqkfisRPhX6-_euGYr8y1hCK7NuH8bdRu6-c63BwWhVFewyonIkDPpKr937hkFNTVwaNe-GSbszJpSwaoYltM9WZKXs5WlT5_Y6C3LuAu1r1H8Y17F20ckFkHnjINrR068JZlDsgr94J4vXgcMvc3FEYTUKnVldzz3q1hQEhBm8ZNlJ66kC4fxiaoE0e36GhRhpPdjog9ZjBqaHRIb6ZYx1T97pQ",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJhfNxLagF9YgRjh1H3u3MTFc",
+      "rating": 4.8,
+      "reference": "CmRRAAAAUDFY_HlDTtBoFWgaZ1JD-ISTdRTuFscFA0XDv8Ivv4XmgGwL-NaXLAL-XxtFkNeegpo9_bRgwj_5wzJBA1tyXdkkBXoalMMCOgIbQl_oBzIyHmF-bgjS-slXLf24cw93EhBBcuIqDStrsHtpFVfyJjExGhRhsXCM13dJytK2S8Xt6_reOzpMkw",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "1213 Dalon Rd NE, Atlanta, GA 30306, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.80469300000001,
+          "lng": -84.33996239999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.80613848029149,
+            "lng": -84.33872856970849
+          },
+          "southwest": {
+            "lat": 33.8034405197085,
+            "lng": -84.3414265302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "8f14df19fa91bb25e66d51c90d23013edc455be8",
+      "name": "Balance Yoga Atlanta",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1361,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116792701802641247466/photos\">Balance Yoga Atlanta</a>"
+          ],
+          "photo_reference": "CoQBdwAAAM0bQ0vNe7EqJLO22sVn0BgO5LVnl2OBWgNpCmj17iMl6FGIn5xeRiiieSd4E0fN76GXKAYqHyJR_yq2Nb3XaK-CRZd68ZR_y8_ggCyh8dZQVHt3og40oUVYjMpq5FvSdZdzB19BBotppjJrp994yk4Xk-pKniMVZfkIyp-B1trkEhAaqghvS6qNrH8LcbuoW25zGhT9OJdMZi69LXSsNvJvQqJvANgo3Q",
+          "width": 1363
+        }
+      ],
+      "place_id": "ChIJwWmizfMF9YgRE19WPeiBqPk",
+      "rating": 4.7,
+      "reference": "CmRSAAAAkuHo6OQG1U9xQs4GwQrr3NwD93NshDzpQeQFWNpUrhhCmHzvkOPCOe55A1YRWDly8pGLJWwMwGWvLQcjaDpFwSiXzFWrW7JqnlJDW22kZmaX0TlRq0oUrZrPChhPfEFSEhAA8LXvNxrG3ST5NmkqILZxGhTdNdAwlJpa40-BGUpJ-h9s_90bhA",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "27 Waddell St NE, Atlanta, GA 30307, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.754441,
+          "lng": -84.362549
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.75576488029149,
+            "lng": -84.3613434197085
+          },
+          "southwest": {
+            "lat": 33.75306691970849,
+            "lng": -84.36404138029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "250942a5e90b23cfc3a4f3c11062882044f5c57e",
+      "name": "Ashtanga Yoga Atlanta",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 909,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100497737706610566732/photos\">Ashtanga Yoga Atlanta</a>"
+          ],
+          "photo_reference": "CoQBdwAAAGlwQcmZIvhg1aQrJ1siD5Wzknp4sl3ubyXoSZyQOA0auMQkJ97szs69exfLw_BmQZI9-b1V6hGD25F0pBBhpzGn_Q_0Xz0QDlz3Zzgd2J_jFyYWADspuim5DpXPJBVnfTsTUNV_q-3tQ-j2TbZxByiwEzYZr1z8Ix2rsax1U2LwEhA5RgYWIZMAagVvHZZ3YpexGhSRqj-40HsMdgwqmswXrj4JWzz2BQ",
+          "width": 1369
+        }
+      ],
+      "place_id": "ChIJ58pOrfkD9YgRg5rxP2_7IEE",
+      "reference": "CmRRAAAAv1bI-wY3Cihqr6I7dU-xKMJ947CMF9WXQAD0cIgv5P8F0_X0DaJJIRqq1tEhoFPB-te9Wc33Usmsr77Iw3SmzA37W2BWTRY-9L0Zr4yS0soDMo3HeKCr5e7zOE17KwOcEhC8cAYJW2yit2YyOhkxit0SGhSq6kR-wYosqm91m4xLmajT2BVfcA",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "1065 Peachtree St NE, Atlanta, GA 30309, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7833663,
+          "lng": -84.38318819999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.7848399802915,
+            "lng": -84.38203476970848
+          },
+          "southwest": {
+            "lat": 33.7821420197085,
+            "lng": -84.3847327302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "67015deddd6070b12700221cee1e706bb7885003",
+      "name": "Exhale Atlanta - Midtown",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 336,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112186501645990726503/photos\">Exhale Atlanta - Midtown</a>"
+          ],
+          "photo_reference": "CoQBdwAAAIZuC52IpQn2mxowFUFoCchs2W1SleUVZ-LRfB1p2n82aUVcKulMd36-hnzPmIrbvoPGm3N_wKI5-iFgyx33oFOKMy_dxY4Pw5Cxt-IZruPVZYm6rv52T19CgC9lbTTqykmg3wH6EB7Kw37_ZoMRyHew9Y5fA-dWWL_aZmMNwaE1EhAFAPGX1FBKhDeYkiiPZzpuGhTY3c3ZprIEL5bncUG6wfswXMullg",
+          "width": 747
+        }
+      ],
+      "place_id": "ChIJW_dJAkME9YgRy3wmvMtckFA",
+      "rating": 4,
+      "reference": "CmRRAAAA6TLGSFzmZsieUhFscnniIfbBMrXQF-pGYg2dtrv1UQNJR9BFvejOZGh8vw35V9r5f9OE5sOePeSysvqF-4J3NInyF59x_SUFFtfBvIH-Yx4mSIc8l2CcOvof9PkWMMfsEhCcWTzuTgd2tlbn_k9aTL0nGhRwm35MGWTVB1SQuQmSqtAZYiv68A",
+      "types": [
+        "spa",
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "842 North Highland Avenue Northeast #5, Atlanta, GA 30306, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.77750810000001,
+          "lng": -84.35294089999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.7788830802915,
+            "lng": -84.3514204697085
+          },
+          "southwest": {
+            "lat": 33.7761851197085,
+            "lng": -84.35411843029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "db7fd169b0e3c045add1dd3a56010ef12df10f48",
+      "name": "Highland Yoga",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 2448,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101661880982317688860/photos\">Highland Yoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAACQG8UlFmYEp-4FhM4GMx9mgtKEyBAaU_b0hrcmajlp9y3Ig5RXnq01ddhWAoL-alZX6DZwwgL5o-avIjzQFoOgn7N-BWlk8RgAR15a6zbRxSDIQYZ4thEuvYcN0vkzsc_yEVxH1OCoDzpQDKiUfjzsdfiMmuVttESQeF4EKpI5nEhADRHWWsVvtF7d5KHf7W_xcGhRPWMP0FerOUy8vxKQycsJ0Br2V-Q",
+          "width": 3264
+        }
+      ],
+      "place_id": "ChIJdac2aqAG9YgRZynFn7o5X-I",
+      "rating": 4.9,
+      "reference": "CmRSAAAAgpJ15Tro77ZDeGl-lMvSyLGA1rABCjxaoiYA3U8ySobv_BpZ0W5tdRB4pPw7uQ3EloKrNydrWrsVcM7LwPH9krqwn_XFZnk6q361EWyMXWWPVkMiFYP6nflCI8a4ZgmnEhB7p78DVarP7cq_TigWJrb_GhT_QiqnPNKQSzDBOdYyH1WOREGUnw",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "439 Edgewood Ave SE, Atlanta, GA 30312, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7541494,
+          "lng": -84.3731322
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.75558703029149,
+            "lng": -84.3717825697085
+          },
+          "southwest": {
+            "lat": 33.75288906970849,
+            "lng": -84.37448053029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "3e35684af1b1eefd9c5ee21bb7601d54b6b0addc",
+      "name": "Hotlanta Yoga",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1546,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102948072785434764061/photos\">Hotlanta Yoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAAKlZMrd5uB6kbgq5h4lttQH3PJKAs0LgU_84ur1OKt1l6QY-chtzt6lEA8XBYfRyCcg7gRNDC8rIz5ttwHfaxWpfP3k2rSD8OimDMWMa_JDa3j-ec-jZQMXtBH6tW8CZdXop2lPAul0g6uFUF-tpdLhS5Q7eseoQE3FnNLCtEZIDEhC7sFqGpHvBK__hVQEoY8XMGhQb8oaK9Y_LgKUq0Kz2Trh86j6zQg",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJ00sW8PQD9YgRRvF57jObvU0",
+      "rating": 5,
+      "reference": "CmRRAAAAEpKdvr54KaSDHwj_aQWQ0id4_csSZiKwXxuA2usHhXNCtTxB9KMT7HwlFya2-mCp6T8WQOPDmc0_XrQdZQTvggiZvSJJOAWcnfdGbGTcBqcS6IlRarINglQ2jI5yZJO9EhDaDn8sE2lkKQrokpynVW45GhR4gyMd9XpRh1CCTAVabXnkTtQa6A",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "655 Highland Ave NE #2, Atlanta, GA 30312, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7609828,
+          "lng": -84.36596849999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.7625087802915,
+            "lng": -84.36461511970849
+          },
+          "southwest": {
+            "lat": 33.75981081970851,
+            "lng": -84.36731308029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "eb48e9928a69ab02d39ecffabdf5704c73e74d5b",
+      "name": "Infinity Yoga",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1016,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112575009085519713160/photos\">Infinity Yoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAAGif6AhnVNjZQVDV5URhIknzROYf_jinLh98co6HZXn_LCpTHow4mPDyuZV1EXosu4eIsID8CPaMJ1lxeudpWraLZ5hwDW1ijnAj16uWhJAN62mHYsfqVHKkHxb3EiJxRq_JrAEEeRCh-rsdniuk1GKI2fM9JDnO2LgvBzdpNpzuEhD7XhBi7T7vF2xcmlkiQsobGhQZ7PpVg1tg0NqY_T3X0Ua_obAogQ",
+          "width": 1017
+        }
+      ],
+      "place_id": "ChIJR-mjkggE9YgRcwM8wCA9Rtk",
+      "rating": 5,
+      "reference": "CmRSAAAAptJivbnpbAbzMv_T4-QyuyjAxsG3YlAG6gyziNz65lP54bxgIWP3FwijF6lUBXRv0Am5Nd6ZGiqZv9O0UcwsYX0avM1v1QNmvVeHBij_hMEGqreNWDumlWNfKwYxrGj1EhAZbxD71wXdy5MtuBpH3JkGGhQgsT_IMqQUz64z4ViNmJL9rTSXag",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "3872 Roswell Road Northeast, Unit C4, Atlanta, GA 30342, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.860342,
+          "lng": -84.381845
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.8616631802915,
+            "lng": -84.38038406970848
+          },
+          "southwest": {
+            "lat": 33.8589652197085,
+            "lng": -84.38308203029149
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "7b06bbdbb516f5ec57e25bd8246202f864647577",
+      "name": "Thunderbolt Power Yoga",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116445501179400179898/photos\">Thunderbolt Power Yoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAAKHHOfiHn49UAra9tv3eI3F249PiX8h3sHYTpGroLg056M3wHBxIO1sZj-kSY6q7sj0wSMf8gHVE7qmN-Q2wR7uP2nB2pQYX64-7SKWoVxl4ronmTgJR2DhoRNdpU-6a_AWpVCbX3jau49Ib-HHZlHD_hE1JdG9umnTMPIymoJKREhDgxQ6fAoIYkkM4FbqQH2Q1GhQywhi_nUnRoDKKOpjCfTqBMNqZpQ",
+          "width": 1073
+        }
+      ],
+      "place_id": "ChIJHRxVMm8P9YgRUTilU16PJPw",
+      "rating": 4.9,
+      "reference": "CmRSAAAAuFTUDtgZoloAB1F-dtocLegRE4eDTqkVQOtRI8F9dIhyeD6ZPF50ku7Pv0ntG5QKpn9ZYwNIyEPUJSdQExQNyKLEiZ7g00OkHu_aNXLI2bmjNprIxuA2bgLQ1V0-ZoWuEhBg0fY9Ex99NR7Bgt6yhhsLGhRI6nt0jga_dhPzFH0lfsQsuKC-pg",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "900 Peachtree St NE #302, Atlanta, GA 30309, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7793162,
+          "lng": -84.3844203
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.78065908029149,
+            "lng": -84.3829776197085
+          },
+          "southwest": {
+            "lat": 33.7779611197085,
+            "lng": -84.3856755802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "046b538463e592bf7c90879cfe2fc073d2884edb",
+      "name": "Onlyoga",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1125,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102228542629442607017/photos\">Onlyoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAADFA4-zavtdsHxd5Y6ngWOAOQnNoaTWOQ-vLXe1zWfHki3cCdO2J-cXM45gnAqs26Rl6b7LrKYbZXBf7pUSkPqRQC3PJt9qgvY4aTEvuk6GM08JmiiZ6KoVHnX4XuORAJg0YL4jieocHPB5PiX_WBnwPCQUi_pCN-SoQjJBuNkUbEhCDKVdaS8V6OlfggSbLbkt8GhSZHWy263LJCIJoaSvEJky35p2FtQ",
+          "width": 1500
+        }
+      ],
+      "place_id": "ChIJmfPPP2gE9YgReBkiUpgYs1g",
+      "price_level": 2,
+      "rating": 4.8,
+      "reference": "CmRRAAAAcJWfKiTa_N0XK4QoqumVlu03ViddCwyPGAjkeiKQID1GCOZBnTpsNQ466VR_av-GSYSPDxi8Yt076lDzG3Z25jkUEqdI6FX2wkOmWTnF1SjbIZ7gyRpd9uIPTcqEFX10EhAL5Ezs4WpuujFutlOC2L6eGhRpONl79DkR0dL2zxxeShzd__S9kQ",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "1681 McLendon Ave NE, Atlanta, GA 30307, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7646499,
+          "lng": -84.33240459999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.76609553029151,
+            "lng": -84.33105541970848
+          },
+          "southwest": {
+            "lat": 33.76339756970851,
+            "lng": -84.3337533802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "78cbb1f8012e6ef53adefa18ecae0aac1941c826",
+      "name": "Kashi Atlanta Inc",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 2113,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112590934007542075457/photos\">L Craighead</a>"
+          ],
+          "photo_reference": "CoQBdwAAADAX1-IwQRvX7l0P6BTzFOIfXPLz2_dvu5MtqSEKGrfbT6KJKoDaOytGFBMW9ZdkOsSdqcteqNwC0J26SLvdO26srYlkETjtLMXxMYBuM4Fah_Ayjmyt3EKlcVoiqqVbndZkrXnVrP2Fz1wVCcPxD-BEHxmnD3ZaLgffcrsepQ9sEhDWgOxGgT-p5Rw5GWRctEBbGhQvhm1C625rBRCLxOanqo1HWZi6MA",
+          "width": 3755
+        }
+      ],
+      "place_id": "ChIJHcO1M8gG9YgR5-FV74xaqsk",
+      "rating": 4.9,
+      "reference": "CmRSAAAAVGYLvZe33kvq7pghbOEIKQeIj6NHvlAVW53PaB8VmIh5oWWwB9OuOx57XH0B2nDsAh1n7YPrM3aEqp5tMnszRmjHBzJhIo7A6b1EOMWmcJxB-PNEAZ7we1UPh4f-FcnuEhC0oiV4lHhZLYGcfW6avoTcGhRoz5gxuaBB6-v4v2-3Xj9yuUR33Q",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "332 Ormond St SE #103, Atlanta, GA 30315, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.73163319999999,
+          "lng": -84.37678470000002
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.7328920302915,
+            "lng": -84.3754386697085
+          },
+          "southwest": {
+            "lat": 33.7301940697085,
+            "lng": -84.37813663029152
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "0348fd217a95bbd5672ba9e0b1c2f53ef5da68a3",
+      "name": "Highland Yoga",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 750,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105892801452733815859/photos\">Highland Yoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAADAjK0hA_XEfGQfdV-o80UQF3Iez515gGhK5_RMr8E9NkpYIKul2WofrjVd6qheMZKEWBy6tee43pOoqGvhONU_uuPHSBT2OfQazm2gTBn7GbNd0ZjAjNYcVVUwCPhiJMoMQOpTo2-zfwxa-aUmVWsIqw1QKfJMwChRuiZY3S5ptEhC-THY3ZhZ7NePACwm6T_6eGhSCa_Gq5Uslij_cJ91uuVbQLg8Zng",
+          "width": 1000
+        }
+      ],
+      "place_id": "ChIJr2XEFb8D9YgRgKWHkfZXW9Q",
+      "rating": 5,
+      "reference": "CmRSAAAAiALDUgvpD4HB7TvTnvOSMPmZyq8h9F1WulQXE4hnXpTWtPExI8wUvbuangxTgR6Ux4vBvRpXBbudlaEefvvM6DJIl128BBiIDPTZswm98hbzt5k8mo-5NoGfR3NsyQkCEhDfuap7BSaRlUWz5sLw2J0uGhQUQMYpgJs7BxWned8Jl-eEh_VCWA",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    },
+    {
+      "formatted_address": "892 Jefferson St NW, Atlanta, GA 30318, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7759526,
+          "lng": -84.4165539
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 33.7774191802915,
+            "lng": -84.41520401970848
+          },
+          "southwest": {
+            "lat": 33.7747212197085,
+            "lng": -84.41790198029149
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "3f1989f64b1cdcd6ba73a550f4cd92a9f05bf2de",
+      "name": "Atlanta Yoga",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1619,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113026173381971378661/photos\">Atlanta Yoga</a>"
+          ],
+          "photo_reference": "CoQBdwAAAB03ZJbH1rNp9rNoiStUNT9TFRcooms9UgfhQ9HSNBUjWGLlliCTTCVzBFDDcEC3Nj4XwXapXvwzIPxo5wUqzm18Er1MdK7T8HnbGNyOkMkqkxmra9bAa2xqk8M6X4aFibia20lT7IMWJMbuVodEfi6SfMm83YwrLMcxO9ZvAfpREhBeMKjJK6Bv2JnJI7fzTzauGhRUW-I1CoqXUj0wwdK-yc6nActgWw",
+          "width": 1621
+        }
+      ],
+      "place_id": "ChIJjUjr3pIE9YgRWz1Zx4RZ7eE",
+      "rating": 5,
+      "reference": "CmRSAAAAOsDsdpVMic3QOFVwxcc-v41kYSJ3dw__RM7z8lmw8kqf-jefS-QbJ4jwTWE4ZSij_JMrzxUePz5-00a7ntgGR6qOX_ZfLJkHaLbEcVz1_iZ0_zRgEmKRKbDMKYA93XD4EhDuD1vYQGNT6F2DguNabd49GhTjEtSWYZBTYDdtDXkgwFJ09wonFQ",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ]
+    }
+  ],
+  "status": "OK"
 }

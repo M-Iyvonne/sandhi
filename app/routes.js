@@ -1,7 +1,8 @@
 var User = require('./models/user');
 var Blast = require('./models/post');
 var Comment = require('./models/comments');
-var Event = require('./models/events')
+var Event = require('./models/events');
+
 var googleApi = require('./models/post');
 const fetch = require('node-fetch');
 const http = require('http');
@@ -41,12 +42,19 @@ module.exports = function(app, passport) {
     //============================
     //Event Posting ========================
     //=================
+    app.delete('/event/delete', isLoggedIn, function(req, res) {
+        Event.find({ _id: req.event._id }),
+            function(err, event) {
+                console.log(event);
+
+            }
+    })
 
     app.get('/event/id', isLoggedIn, function(req, res) {
         Event.find({ userId: req.user._id }, function(err, event) {
-            res.render("profile.ejs", { user: req.user, event: event })
-            console.log(event);
-
+            if (!err) {
+                res.render("profile.ejs", { user: req.user, event: event });
+            };
         });
     });
     app.post('/event', isLoggedIn, function(req, res) {
@@ -67,6 +75,21 @@ module.exports = function(app, passport) {
             }
         });
     });
+
+    app.get("/event/search", function(req, res) {
+    if (req.query.search) {
+       const regex = new RegExp(escapeRegex(req.query.search), 'gi');
+       Event.find({ "createdBy": regex }, function(err, event) {
+        console.log(req.query.search);
+           if(err) {
+               console.log(err);
+           } else {
+            // console.log(event);
+              res.render("profile.ejs", { user: req.user, event: event });
+           }
+       }); 
+    }
+});
 
     //============================
     //Posts Page ========================
@@ -104,7 +127,7 @@ module.exports = function(app, passport) {
             })
             .then(function(fetchGoogleApi) {
                 // var googleAPI ='https://maps.googleapis.com/maps/api/place/textsearch/json?query=yoga+in+roswell+georgia&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis';
-                var googleAPI = 'http://localhost:8080/googleApi.json';
+                var googlePlaces = 'http://localhost:8080/googleApi.json';
                 var myInit = {
                     method: 'GET',
                     headers: {
@@ -113,53 +136,56 @@ module.exports = function(app, passport) {
                     mode: 'cors',
                     cache: 'default'
                 };
-                fetch(googleAPI, myInit)
+                fetch(googlePlaces, myInit)
                     .then(function(res) {
                         return res.json(res);
                     })
                     .then(function(json) {
 
-                        for (var i = 0; i < json.results.length; i++) {
+                        for (var i = 0; i < 10; i++) { //json.results.length
 
                             var result = json.results[i];
                             var name = result.name;
                             var address = result.formatted_address;
                             var rating = result.rating;
                             var id = result.id;
+                            var placesId = result.place_id;
+                            var photoRef = 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&photoreference=' + photo + '&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis';
+                            var photo = (function() {
+                                try {
+                                    return result.photos[0].photo_reference;
 
-                            results.push({ name: name, address: address, rating: rating, id: id });
+                                } catch (err) {
+                                    return undefined;
+                                }
+                            })();
+                            results.push({ name: name, address: address, rating: rating, placesId: placesId, photoRef: photoRef });
+                            // console.log(result.photos);
                         }
-                        console.log("------RESULTS DATA-----", results);
+
+                        // console.log("------RESULTS DATA-----", results);
                         // console.log("-------BLASTS DATA-----",{blasts: blasts});
-                        return res.render('post.ejs', {
-                            user: req.user,
-                            blasts: blasts,
-                            comments: comments,
-                            authors: authors,
-                            results: results
-                        });
-                    })
-
-                // console.log(json);
-
-
-                // console.log('---authors---', json.name);
-                // .then(function(authorData){
-                // authorData.forEach(function(author){
-                //     authors[author._id] = author;
-                // });
-                console.log('---results---', results);
-                //#I have no idea why this didn't work and I had to move it up to line 133
-                // return res.render('post.ejs', {
-                //         user: req.user,
-                //         blasts: blasts,
-                //         comments: comments,
-                //         authors: authors,
-                //         results: results
-                //     });
+                        return res.render('post.ejs', { user: req.user, blasts: blasts, comments: comments, authors: authors, results: results });
+                    });
             });
-
     });
+    // console.log('---authors---', json.name);
+    // .then(function(authorData){
+    // authorData.forEach(function(author){
+    //     authors[author._id] = author;
+    // });
+    // console.log('---results---', results);
+    //#I have no idea why this didn't work and I had to move it up to line 133
+    // return res.render('post.ejs', {
+    //         user: req.user,
+    //         blasts: blasts,
+    //         comments: comments,
+    //         authors: authors,
+    //         results: results
+    //     });
+
+
+
 
 
 
@@ -206,37 +232,71 @@ module.exports = function(app, passport) {
     // ==== Setting up Google googleApi
     // ==========
 
-    // app.get('/places', isLoggedIn, function(req, res) {
-    //     var results;
-    //     var options = {
-    //         host: 'maps.googleapis.com',
-    //         port: 80,
-    //         path: '/maps/api/place/textsearch/json?query=yoga+in+roswell+georgia&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis'
-    //     };
-    //     // request('https://maps.googleapis.com/maps/api/place/textsearch/json?query=youga+in+roswell+georgia&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis',
-    //     request('http://localhost:8080/googleApi.json',
-    //         function(err, g, data) {
-    //             data = JSON.parse(data);
+    app.post('/post/places', isLoggedIn, function(req, res) {
+        var blasts;
+        var commentArray = [];
+        var comments = {};
+        var authorsArray = [];
+        var authors = {};
+        var results = [];
 
-    //             var results = [];
-    //             for (var i = 0; i < 5; i++) {
+        Blast.find({}).sort('-date').exec()
+            .then(function(blastData) {
+                blasts = blastData;
+                blasts.forEach(function(blast) {
+                    blast.comments.forEach(function(comment) {
+                        commentArray.push(comment);
+                    });
+                });
 
-    //                 var result = data.results[i];
-    //                 var name = result.name;
-    //                 var address = result.formatted_address;
-    //                 var rating = result.rating;
-    //                 var id = result.id;
+                return Comment.find({ '_id': { $in: commentArray } }).exec();
+            })
+            .then(function(commentData) {
+                commentData.forEach(function(comment) {
+                    comments[comment._id] = comment;
+                    if (authorsArray.indexOf(comment.author) === -1) {
+                        authorsArray.push(comment.author);
+                    }
+                });
+            })
+        var userInput = req.body.location;
+        // console.log(userInput);
+        // var googleAPI = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=yoga+in+${userInput}&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis`;
+        var options = {
+            host: 'maps.googleapis.com',
+            port: 80,
+            path: '/maps/api/place/textsearch/json?query=yoga+in+roswell+georgia&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis'
+        };
+        request(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=youga+in+${userInput}&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis`,
+            function(err, g, data) {
+                data = JSON.parse(data);
 
-    //                 results.push({ name: name, address: address, rating: rating, id: id });
-    //             }
-    //             console.log(results);
-    //             res.render('post.ejs', { results: results });
+                var results = [];
+                for (var i = 0; i < data.results.length; i++) {
 
+                    var result = data.results[i];
+                    var name = result.name;
+                    var address = result.formatted_address;
+                    var rating = result.rating;
+                    var id = result.id;
+                    var photoRef = 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=500&photoreference=' + photo + '&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis';
+                    var photo = (function() {
+                        try {
+                            return result.photos[0].photo_reference;
 
-    //         });
+                        } catch (err) {
+                            return undefined;
+                        }
+                    })();
+                    console.log(results);
 
-
-    // });
+                    results.push({ name: name, address: address, rating: rating, id: id, photoRef: photoRef });
+                }
+                // console.log(results);
+                // console.log(photo);
+                res.render('post.ejs', { results: results, user: req.user, blasts: blasts, comments: comments });
+            });
+    });
 
     // LOGOUT ==============================
     app.get('/logout', function(req, res) {
@@ -352,3 +412,6 @@ function isLoggedIn(req, res, next) {
 
     res.redirect('/');
 }
+function escapeRegex(text){
+    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+};
