@@ -43,9 +43,9 @@ module.exports = function(app, passport) {
     //Event Posting ========================
     //=================
     app.delete('/event/delete', isLoggedIn, function(req, res) {
-        Event.find({ _id: req.event._id }),
+        Event.findOne({ _id: req.event._id }),
             function(err, event) {
-                console.log(event);
+                console.log(req.event._id)
 
             }
     })
