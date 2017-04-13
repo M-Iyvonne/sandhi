@@ -67,7 +67,11 @@
         <% for (var i = 0; i < results.length; i++) { %>
         <div class="row">
           <div class="col-sm-3 greedy"><br>
+          <% if (results[i].photo !== undefined ) { %>
               <img class="img-responsive" src="<%=results[i].photoRef%>">
+              <%} else { %> 
+              <img class="img-responsive" src="/images/no-image.png">
+              <% } %>
           </div>
           <div class='col-sm-8 blasts'>
 

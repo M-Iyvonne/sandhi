@@ -140,7 +140,7 @@ module.exports = function(app, passport) {
                     mode: 'cors',
                     cache: 'default'
                 };
-                fetch(googlePlaces, myInit)
+                fetch(googlePlaces)
                     .then(function(res) {
                         return res.json(res);
                     })
@@ -163,7 +163,7 @@ module.exports = function(app, passport) {
                                     return undefined;
                                 }
                             })();
-                            results.push({ name: name, address: address, rating: rating, placesId: placesId, photoRef: photoRef });
+                            results.push({ name: name, address: address, rating: rating, placesId: placesId, photo:photo, photoRef: photoRef });
                             // console.log(result.photos);
                         }
 
@@ -280,9 +280,10 @@ module.exports = function(app, passport) {
                             return undefined;
                         }
                     })();
+                    // console.log("this is the photoId", photo);
                     console.log(results);
 
-                    results.push({ name: name, address: address, rating: rating, id: id, photoRef: photoRef });
+                    results.push({ name: name, address: address, rating: rating, id: id, photo:photo, photoRef: photoRef });
                 }
                 // console.log(results);
                 // console.log(photo);
