@@ -130,8 +130,8 @@ module.exports = function(app, passport) {
                 // return User.find({'local.name': {$in: authorsArray}}).exec();
             })
             .then(function(fetchGoogleApi) {
-                var googleAPI ='https://maps.googleapis.com/maps/api/place/textsearch/json?query=yoga+in+roswell+georgia&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis';
-                // var googlePlaces = 'http://localhost:8080/googleApi.json';
+                // var googleAPI ='https://maps.googleapis.com/maps/api/place/textsearch/json?query=yoga+in+roswell+georgia&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis';
+                var googlePlaces = 'http://localhost:8080/googleApi.json';
                 var myInit = {
                     method: 'GET',
                     headers: {
@@ -177,28 +177,6 @@ module.exports = function(app, passport) {
     // .then(function(authorData){
     // authorData.forEach(function(author){
     //     authors[author._id] = author;
-    // });
-    // console.log('---results---', results);
-    //#I have no idea why this didn't work and I had to move it up to line 133
-    // return res.render('post.ejs', {
-    //         user: req.user,
-    //         blasts: blasts,
-    //         comments: comments,
-    //         authors: authors,
-    //         results: results
-    //     });
-
-
-    // app.post('/post/:commentid', isLoggedIn, function(req, res) {
-    //     if(req.body.commenttId){
-    //         console.log(req.body.commenttId);
-    //         // Event.findOne({'_id': req.body.commentId},function(err, event){
-    //         //    if(!err){ 
-    //         //     event.remove();
-    //         //     res.redirect('/post');
-                
-    //         }
-    // //     }
     // });
 
 
