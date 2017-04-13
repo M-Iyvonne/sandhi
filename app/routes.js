@@ -140,7 +140,7 @@ module.exports = function(app, passport) {
                     mode: 'cors',
                     cache: 'default'
                 };
-                fetch(googlePlaces)
+                fetch(googlePlaces, myInit)
                     .then(function(res) {
                         return res.json(res);
                     })
