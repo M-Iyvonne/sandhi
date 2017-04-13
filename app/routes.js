@@ -42,13 +42,18 @@ module.exports = function(app, passport) {
     //============================
     //Event Posting ========================
     //=================
-    app.delete('/event/delete', isLoggedIn, function(req, res) {
-        Event.findOne({ _id: req.event._id }),
-            function(err, event) {
-                console.log(req.event._id)
-
-            }
-    })
+    app.post('/event/:id', isLoggedIn, function(req, res) {
+        if(req.body.eventId){
+            Event.findOne({'_id': req.body.eventId},function(err, event){
+               if(!err){ 
+                event.remove();
+                res.redirect('/profile');
+                }else{
+                    console.log(err);
+                }
+            })
+        }
+    });
 
     app.get('/event/id', isLoggedIn, function(req, res) {
         Event.find({ userId: req.user._id }, function(err, event) {
@@ -80,7 +85,6 @@ module.exports = function(app, passport) {
     if (req.query.search) {
        const regex = new RegExp(escapeRegex(req.query.search), 'gi');
        Event.find({ "createdBy": regex }, function(err, event) {
-        console.log(req.query.search);
            if(err) {
                console.log(err);
            } else {
@@ -126,8 +130,8 @@ module.exports = function(app, passport) {
                 // return User.find({'local.name': {$in: authorsArray}}).exec();
             })
             .then(function(fetchGoogleApi) {
-                // var googleAPI ='https://maps.googleapis.com/maps/api/place/textsearch/json?query=yoga+in+roswell+georgia&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis';
-                var googlePlaces = 'http://localhost:8080/googleApi.json';
+                var googleAPI ='https://maps.googleapis.com/maps/api/place/textsearch/json?query=yoga+in+roswell+georgia&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis';
+                // var googlePlaces = 'http://localhost:8080/googleApi.json';
                 var myInit = {
                     method: 'GET',
                     headers: {
@@ -185,7 +189,17 @@ module.exports = function(app, passport) {
     //     });
 
 
-
+    // app.post('/post/:commentid', isLoggedIn, function(req, res) {
+    //     if(req.body.commenttId){
+    //         console.log(req.body.commenttId);
+    //         // Event.findOne({'_id': req.body.commentId},function(err, event){
+    //         //    if(!err){ 
+    //         //     event.remove();
+    //         //     res.redirect('/post');
+                
+    //         }
+    // //     }
+    // });
 
 
 
@@ -411,7 +425,9 @@ function isLoggedIn(req, res, next) {
         return next();
 
     res.redirect('/');
-}
+};
+
+
 function escapeRegex(text){
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
 };

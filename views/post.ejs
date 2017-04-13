@@ -32,7 +32,11 @@
               <% for(var j=0; j<blasts[i].comments.length; j++) { %>
                 <div class="comment">
                   <h5><%= comments[blasts[i].comments[j]].subject %> - <%= comments[blasts[i].comments[j]].author %></h5>
+                  <form action="/post/:commentid" method="POST">
+               <p><button type="submit" class="form-control delete" value>delete</button></p>
+               <input type="hidden" class="form-control" name="commentId">
                 </div>
+               </form>
               <% } %>
           </div>
           <form class="form-inline" action="/comment" method="POST">

@@ -144,8 +144,11 @@
             <h5><span><%= event[i].date %></span></h5>
             <p><%= event[i].about %></p>
             <h5><span>Created By: <%= event[i].createdBy %></span></h5>
-                   <% if(user) {%><p><button type="submit" action="/event/delete">delete</button></p><% }%>
-
+              <% if (user) {%>
+               <form action="/event/:id" method="POST">
+               <p><button type="submit" class="form-control delete" value>delete</button></p>
+               <input type="hidden" class="form-control" name="eventId" value="<%= event[i]._id %>">
+               </form><% } %>
           </article>
       <% } %>
         </section>
