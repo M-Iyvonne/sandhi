@@ -98,6 +98,33 @@ app.get("/event/search", function(req, res) {
 //============================
 //Posts Page ========================
 //=================
+
+    // ==========================
+        // setting up Comments
+    //===========================
+
+app.post('/comment', isLoggedIn, function(req, res) {
+    var newComment = new Comment({
+        blast: req.body.blast_id,
+        subject: req.body.comment,
+        author: req.user.local.name
+    });
+    newComment.save(function(err) {
+        if (!err) {
+            console.log(req.body.blast_id);
+            Blast.findOne({ _id: req.body.blast_id.trim()}, function(err2, blast) {
+                console.log(err2);
+                blast.comments.push(newComment._id);
+                blast.save(function(err) {
+                    res.redirect('/post');
+                });
+            });
+        }
+    });
+
+
+    });
+
 app.get('/post', isLoggedIn, function(req, res) {
 
     var blasts;
@@ -129,17 +156,18 @@ app.get('/post', isLoggedIn, function(req, res) {
             // console.log('---authorsArray---',authorsArray);
             // return User.find({'local.name': {$in: authorsArray}}).exec();
         })
-    var options = {
-        host: 'maps.googleapis.com',
-        port: 80,
-        path: '/maps/api/place/textsearch/json?query=yoga+in+roswell+georgia&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis'
-    };
-    request(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=youga+in+roswell&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis`,
-        function(err, g, data) {
-            data = JSON.parse(data);
+
+            var options = {
+                host: 'maps.googleapis.com',
+                port: 80,
+                path: '/maps/api/place/textsearch/json?query=yoga+in+roswell+georgia&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis'
+            };
+            request(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=youga+in+roswell&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis`,
+                function(err, g, data) {
+                    data = JSON.parse(data);
 
             var results = [];
-            for (var i = 0; i < data.results.length; i++) {
+            for (var i = 0; i < 5; i++) {
 
                 var result = data.results[i];
                 var name = result.name;
@@ -188,29 +216,6 @@ app.post('/post', isLoggedIn, function(req, res) {
 
     });
 });
-// ==========================
-// setting up Comments
-//===========================
-
-app.post('/comment', isLoggedIn, function(req, res) {
-    var newComment = new Comment({
-        blast: req.body.blast_id,
-        subject: req.body.comment,
-        author: req.user.local.name
-    });
-    newComment.save(function(err) {
-        if (!err) {
-            Blast.findOne({ _id: req.body.blast_id }, function(err2, blast) {
-                blast.comments.push(newComment._id);
-                blast.save(function(err) {
-                    res.redirect('/post');
-                });
-            });
-        }
-    });
-
-
-});
 
 // =========
 // ==== Setting up Google googleApi
@@ -256,7 +261,7 @@ app.post('/post/places', isLoggedIn, function(req, res) {
             data = JSON.parse(data);
 
             var results = [];
-            for (var i = 0; i < data.results.length; i++) {
+            for (var i = 0; i < 5; i++) {
 
                 var result = data.results[i];
                 var name = result.name;
@@ -273,7 +278,6 @@ app.post('/post/places', isLoggedIn, function(req, res) {
                     }
                 })();
                 // console.log("this is the photoId", photo);
-                console.log(results);
 
                 results.push({ name: name, address: address, rating: rating, id: id, photo: photo, photoRef: photoRef });
             }
@@ -294,72 +298,95 @@ app.get('/logout', function(req, res) {
 // AUTHENTICATE (FIRST LOGIN) ==================================================
 // =============================================================================
 
-// locally --------------------------------
-// LOGIN ===============================
-// show the login form
-app.get('/login', function(req, res) {
-    res.render('login.ejs', { message: req.flash('loginMessage') });
-});
+    // locally --------------------------------
+        // LOGIN ===============================
+        // show the login form
+        app.get('/login', function(req, res) {
+            res.render('login.ejs', { message: req.flash('loginMessage') });
+        });
 
-// process the login form
-app.post('/login', passport.authenticate('local-login', {
-    successRedirect: '/profile', // redirect to the secure profile section
-    failureResdirect: '/login', // redirect back to the signup page if there is an error
-    failureFlash: true // allow flash messages
-}));
+        // process the login form
+        app.post('/login', passport.authenticate('local-login', {
+            successRedirect : '/profile', // redirect to the secure profile section
+            failureRedirect : '/login', // redirect back to the signup page if there is an error
+            failureFlash : true // allow flash messages
+        }));
 
-// SIGNUP =================================
-// show the signup form
-app.get('/signup', function(req, res) {
-    res.render('signup.ejs', { message: req.flash('signupMessage') });
-});
+        // SIGNUP =================================
+        // show the signup form
+        app.get('/signup', function(req, res) {
+            res.render('signup.ejs', { message: req.flash('signupMessage') });
+        });
 
-// process the signup form
-app.post('/signup', passport.authenticate('local-signup', {
-    successRedirect: '/profile', // redirect to the secure profile section
-    failureRedirect: '/signup', // redirect back to the signup page if there is an error
-    failureFlash: true // allow flash messages
-}));
+        // process the signup form
+        app.post('/signup', passport.authenticate('local-signup', {
+            successRedirect : '/profile', // redirect to the secure profile section
+            failureRedirect : '/signup', // redirect back to the signup page if there is an error
+            failureFlash : true // allow flash messages
+        }));
 
-// facebook -------------------------------
+    // facebook -------------------------------
 
-// send to facebook to do the authentication
-app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }));
+        // send to facebook to do the authentication
+        app.get('/auth/facebook', passport.authenticate('facebook', { scope : 'email' }));
 
-// handle the callback after facebook has authenticated the user
-app.get('/auth/facebook/callback',
-    passport.authenticate('facebook', {
-        successRedirect: '/profile',
-        failureRedirect: '/'
-    }));
+        // handle the callback after facebook has authenticated the user
+        app.get('/auth/facebook/callback',
+            passport.authenticate('facebook', {
+                successRedirect : '/profile',
+                failureRedirect : '/'
+            }));
 
+    // twitter --------------------------------
+
+        // send to twitter to do the authentication
+        app.get('/auth/twitter', passport.authenticate('twitter', { scope : 'email' }));
+
+        // handle the callback after twitter has authenticated the user
+        app.get('/auth/twitter/callback',
+            passport.authenticate('twitter', {
+                successRedirect : '/profile',
+                failureRedirect : '/'
+            }));
+
+
+    // google ---------------------------------
+
+        // send to google to do the authentication
+        app.get('/auth/google', passport.authenticate('google', { scope : ['profile', 'email'] }));
+
+        // the callback after google has authenticated the user
+        app.get('/auth/google/callback',
+            passport.authenticate('google', {
+                successRedirect : '/profile',
+                failureRedirect : '/'
+            }));
 
 // =============================================================================
 // AUTHORIZE (ALREADY LOGGED IN / CONNECTING OTHER SOCIAL ACCOUNT) =============
 // =============================================================================
 
-// locally --------------------------------
-app.get('/connect/local', function(req, res) {
-    res.render('connect-local.ejs', { message: req.flash('loginMessage') });
-});
-app.post('/connect/local', passport.authenticate('local-signup', {
-    successRedirect: '/profile', // redirect to the secure profile section
-    failureRedirect: '/connect/local', // redirect back to the signup page if there is an error
-    failureFlash: true // allow flash messages
-}));
+    // locally --------------------------------
+        app.get('/connect/local', function(req, res) {
+            res.render('connect-local.ejs', { message: req.flash('loginMessage') });
+        });
+        app.post('/connect/local', passport.authenticate('local-signup', {
+            successRedirect : '/profile', // redirect to the secure profile section
+            failureRedirect : '/connect/local', // redirect back to the signup page if there is an error
+            failureFlash : true // allow flash messages
+        }));
 
-// facebook -------------------------------
+    // facebook -------------------------------
 
-// send to facebook to do the authentication
-app.get('/connect/facebook', passport.authorize('facebook', { scope: 'email' }));
+        // send to facebook to do the authentication
+        app.get('/connect/facebook', passport.authorize('facebook', { scope : 'email' }));
 
-// handle the callback after facebook has authorized the user
-app.get('/connect/facebook/callback',
-    passport.authorize('facebook', {
-        successRedirect: '/profile',
-        failureRedirect: '/'
-    }));
-
+        // handle the callback after facebook has authorized the user
+        app.get('/connect/facebook/callback',
+            passport.authorize('facebook', {
+                successRedirect : '/profile',
+                failureRedirect : '/'
+            }));
 
 
 // =============================================================================
@@ -369,24 +396,24 @@ app.get('/connect/facebook/callback',
 // for local account, remove email and password
 // user account will stay active in case they want to reconnect in the future
 
-// local -----------------------------------
-app.get('/unlink/local', isLoggedIn, function(req, res) {
-    var user = req.user;
-    user.local.email = undefined;
-    user.local.password = undefined;
-    user.save(function(err) {
-        res.redirect('/profile');
+    // local -----------------------------------
+    app.get('/unlink/local', isLoggedIn, function(req, res) {
+        var user            = req.user;
+        user.local.email    = undefined;
+        user.local.password = undefined;
+        user.save(function(err) {
+            res.redirect('/profile');
+        });
     });
-});
 
-// facebook -------------------------------
-app.get('/unlink/facebook', isLoggedIn, function(req, res) {
-    var user = req.user;
-    user.facebook.token = undefined;
-    user.save(function(err) {
-        res.redirect('/profile');
+    // facebook -------------------------------
+    app.get('/unlink/facebook', isLoggedIn, function(req, res) {
+        var user            = req.user;
+        user.facebook.token = undefined;
+        user.save(function(err) {
+            res.redirect('/profile');
+        });
     });
-});
 
 };
 
@@ -396,7 +423,7 @@ function isLoggedIn(req, res, next) {
         return next();
 
     res.redirect('/');
-};
+}
 
 
 function escapeRegex(text) {

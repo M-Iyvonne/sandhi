@@ -20,28 +20,27 @@
       </form>
 
       <div class= "post">
-        <% for(var i=0; i<blasts.length; i++) { %>
+        <% for(var i=0; i< blasts.length; i++) { %>
         <div class="blasts">
             <h3><%= blasts[i].title %></h3>
-            <h4><%= blasts[i].subject %></h4>
-            <p>Author: <%= blasts[i].author %>  
-              <span class="date">Date: <%= blasts[i].date %></span></p>
-
+            <h4 class="textFont"><%= blasts[i].subject %></h4>
+            <p class="textFont">Author: <%= blasts[i].author %>  
+              <span class="date textFont">Date: <%= blasts[i].date %></span></p>
           <div class="comments"> 
               <h4>Comments:</h4>
-              <% for(var j=0; j<blasts[i].comments.length; j++) { %>
-                <div class="comment">
-                  <h5><%= comments[blasts[i].comments[j]].subject %> - <%= comments[blasts[i].comments[j]].author %></h5>
-                  <form action="/post/:commentid" method="POST">
-               <p><button type="submit" class="form-control delete" value>delete</button></p>
-               <input type="hidden" class="form-control" name="commentId">
+              <% for(var j=0; j< blasts[i].comments.length; j++) { %>
+                <div class="comment textFont">
+                  <h5><%= comments[blasts[i].comments[j]].subject %></h5>
+                  <p><%= comments[blasts[i].comments[j]].author %>
+               <a href="/post/:<%=comments[blasts[i].comments[j]]._id%>">delete</a></p>
                 </div>
                </form>
               <% } %>
           </div>
+          
           <form class="form-inline" action="/comment" method="POST">
             <div class="form-group col-sm-8">
-              <input type="hidden" name="blast_id" value=" <%= blasts._id %> ">
+              <input type="hidden" name="blast_id" value=" <%=blasts[i]._id%> ">
               <input type="hidden" name="name">
               <input type="text" id="input" class="form-control input-sm " name="comment">
             </div>
@@ -74,11 +73,10 @@
               <% } %>
           </div>
           <div class='col-sm-8 blasts'>
-
             <h2> <%= results[i].name %> </h2> 
-            <div> Studio Location <%= results[i].address %> </div>
-            <div> Studio Rating <%= results[i].rating %> </div>
-            <div><a href="http://maps.google.com/maps?daddr= <%=results[i].address %>">Directions</a></div>
+            <div class="textFont"> Studio Location <%= results[i].address %> </div>
+            <div class="textFont"> Studio Rating <%= results[i].rating %> </div>
+            <div class="textFont"><a href="http://maps.google.com/maps?daddr= <%=results[i].address %>"><h5>Directions</h5></a></div>
           </div>
         </div>
          <% } %>
@@ -89,4 +87,3 @@
 </div>
 
 <% include includes/footer %>
-

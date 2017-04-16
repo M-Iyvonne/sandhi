@@ -19,8 +19,8 @@
                 <% }else if(user.facebook.email !== null) { %>
                     <p><strong>Email</strong>: <%= user.facebook.email %></p>
                     <% } %>
-                <p><strong>Name</strong>:<%= user.local.name %></p>
-                <p><strong>About Me</strong>:<%= user.local.aboutMe %></p>
+                <p><strong>Name</strong>: <%= user.local.name %></p>
+                <p class="textFont"><strong>About Me</strong>: <%= user.local.aboutMe %></p>
 
 
             <div class="container">
@@ -138,16 +138,16 @@
             <h2></h2> <!-- this <h2>has to stay to keep the plugin set up correctly -->
             <hr>
             
-          <article class="white-panel"><img src="<%=event[i].imageUrl %>">
+          <article class="white-panel" ><img src="<%=event[i].imageUrl %>">
             <h4 class="sign text-center"><%= event[i].eventName %></h4>
             <h4><%= event[i].location %></h4>
-            <h5><span><%= event[i].date %></span></h5>
-            <p><%= event[i].about %></p>
+            <h5 class="textFont"><span><%= event[i].date %></span></h5>
+            <p class="textFont"><%= event[i].about %></p>
             <h5><span>Created By: <%= event[i].createdBy %></span></h5>
-              <% if (user) {%>
+              <% if (user.local.name === event[i].createdBy) {%>
                <form action="/event/:id" method="POST">
-               <p><button type="submit" class="form-control delete" value>delete</button></p>
-               <input type="hidden" class="form-control" name="eventId" value="<%= event[i]._id %>">
+               <p><button type="submit" class="form-control btn-sm">delete</button></p>
+               <input type="hidden" class="form-control" name="eventId" value="<%=event[i]._id%>">
                </form><% } %>
           </article>
       <% } %>

@@ -1,5 +1,9 @@
 body {
   background-image: url(../images/grey-linen-texture.jpg);
+  font-family: 'Bad Script', cursive;
+}
+.textFont {
+  font-family: 'Raleway', sans-serif;
 }
 .test { 
  	margin-top: 50px;
@@ -21,6 +25,15 @@ body {
  .cushion {
   padding: 10px;
  }
+ .delete {
+  width: 15%;
+  padding: 5px;
+  display: inline;
+
+ }
+ .oneLine {
+  width: 100%;
+ }
 
  .bg-yellow {
  	background-color: rgba(232, 180, 102, .75);
@@ -37,16 +50,21 @@ body {
  .post {
  	margin: 25px auto;
   width: 100%;
+  height: 2em;
  }
  .blasts {
  	border: 1px solid black;
  	border-radius: 5px;
  	color: rgb(102, 51, 0);
+  box-shadow: 10px 10px 5px #888888;
  	padding:10px;
- 	margin: 25px auto;
+ 	margin: 25px 15px;
  	background-image: url(../images/grey-linen-texture.jpg);
  	/*background-color: rgba(232, 180, 102, .75);*/
 
+ }
+ .post button {
+  margin-top: 1em;
  }
  .comment {
  	margin-left: 10px;
@@ -55,6 +73,9 @@ body {
  	padding:10px;
  	margin: 10px auto;
  	background-color: white;
+ }
+ .comment a {
+  float: right;
  }
  .date {
  	margin-left: 20px;
@@ -96,12 +117,13 @@ Style for profile page*/
 }
 .sign {
   background-color: rgba(232, 180, 102, .75);
-  padding: 5px;
+  padding: 15px;
 }
 .bg-posts {
   background-color: rgba(232, 180, 102, .75);
-  margin-right: 2px;
   border: 2px solid rgb(102, 51, 0);
+  height: 100%;
+  box-shadow: 10px 10px 5px #888888;
  }
 
 #event {
@@ -110,6 +132,7 @@ Style for profile page*/
 .foot {
 	/*background-image: url(../images/paisley2.png);*/
 	background-color: rgba(232, 180, 102, .75);
+  padding: 15px;
 }
 
 /*Style for Pinboard*/
@@ -160,4 +183,6 @@ stylize any heading tags withing white-panel below
 
 footer {
   margin-top: 25px;
+  text-align: center;
+
 }
