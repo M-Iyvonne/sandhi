@@ -32,7 +32,7 @@
                 <div class="comment textFont">
                   <h5><%= comments[blasts[i].comments[j]].subject %></h5>
                   <p><%= comments[blasts[i].comments[j]].author %>
-               <a href="/post/:<%=comments[blasts[i].comments[j]]._id%>">delete</a></p>
+               <a href="/post/delete?id=<%=comments[blasts[i].comments[j]]._id%>">delete</a></p>
                 </div>
                </form>
               <% } %>

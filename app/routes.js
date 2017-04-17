@@ -111,7 +111,6 @@ app.post('/comment', isLoggedIn, function(req, res) {
     });
     newComment.save(function(err) {
         if (!err) {
-            console.log(req.body.blast_id);
             Blast.findOne({ _id: req.body.blast_id.trim()}, function(err2, blast) {
                 console.log(err2);
                 blast.comments.push(newComment._id);
@@ -122,8 +121,21 @@ app.post('/comment', isLoggedIn, function(req, res) {
         }
     });
 
-
     });
+app.get('/post/delete', isLoggedIn, function(req, res){
+    if(req.query.id){
+        var dComment = req.query.id;
+        Comment.findOne({_id: req.query.id}, function(err, comment){
+            Blast.findOne({ 'comment': req.query.id}, function(err2, comment2){
+            console.log("this is the BLASTS---------", comment2);
+            console.log("this is the comment -------", comment);
+
+            // return Comment.find({ '_id': { $in: commentArray } }).exec();
+        res.redirect('/post');
+        })
+    })
+    }
+});
 
 app.get('/post', isLoggedIn, function(req, res) {
 
@@ -184,7 +196,7 @@ app.get('/post', isLoggedIn, function(req, res) {
                     }
                 })();
                 // console.log("this is the photoId", photo);
-                console.log(results);
+                // console.log(results);
 
                 results.push({ name: name, address: address, rating: rating, id: id, photo: photo, photoRef: photoRef });
             }
