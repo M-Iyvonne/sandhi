@@ -126,14 +126,12 @@ app.get('/post/delete', isLoggedIn, function(req, res){
     if(req.query.id){
         var dComment = req.query.id;
         Comment.findOne({_id: req.query.id}, function(err, comment){
-            Blast.findOne({ 'comment': req.query.id}, function(err2, comment2){
-            console.log("this is the BLASTS---------", comment2);
-            console.log("this is the comment -------", comment);
-
-            // return Comment.find({ '_id': { $in: commentArray } }).exec();
-        res.redirect('/post');
+            Blast.findOne({ 'comments': {"$elemMatch":{"$in":[req.query.id]}}}, function(err2, comment2){
+                comment.remove();
+                comment2.remove();
+                res.redirect('/post');
+            })
         })
-    })
     }
 });
 

@@ -1,6 +1,7 @@
 body {
   background-image: url(../images/grey-linen-texture.jpg);
   font-family: 'Bad Script', cursive;
+  font-size: 16px;
 }
 .textFont {
   font-family: 'Raleway', sans-serif;
@@ -75,6 +76,8 @@ body {
  }
  .comment a {
   float: right;
+  display: inline-block;
+  padding-left: 15px;
  }
  .date {
  	margin-left: 20px;
