@@ -23,6 +23,47 @@ body {
   margin-bottom: 50px;
   border-radius: 15px;
  }
+ .rainbow {
+/*  background-image: url("/images/dots.png");
+*/  background-color: rgba(232, 180, 102, .75);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+  height: 3em;
+  width: 100%;
+
+ }
+
+ .rainbow1 {
+  background-image: url("/images/chakra.png");
+  opacity: .75;
+  background-repeat: no-repeat;
+  height: 3em;
+  width: 100%;
+  background-size: cover;
+}
+.swirls {
+  background-image: url("/images/chakra.png");
+  opacity: .5;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15em;
+}
+
+.swirls1 {
+  background-image: url("/images/chakra.png");
+  opacity: .5;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15em;
+  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
  .cushion {
   padding: 10px;
  }
@@ -46,11 +87,17 @@ body {
  .navbar-brand,
  .nav a {
  	color: rgb(102, 51, 0);
+  font-size: 20px;
  }
 
  .post {
  	margin: 25px auto;
   width: 100%;
+ }
+ .swirly {
+  background-image: url(../images/swirly.png);
+  background-size: cover;
+  height: 100px;
  }
  .blasts {
  	border: 1px solid black;
@@ -73,6 +120,18 @@ body {
  	padding:10px;
  	margin: 10px auto;
  	background-color: white;
+ }
+ form.comment {
+  display:none;
+ }
+ form.comment:target {
+  background-color: rgb(232, 180, 102);
+  border: 2px solid white;
+  display:block;
+  padding: 1em;
+ }
+ .white{
+  background-color: white;
  }
  .comment a {
   float: right;
@@ -104,6 +163,9 @@ Style for profile page*/
 }
 .greedy {
   margin: 25px auto;
+}
+.greedyWide {
+  margin: auto 25px;
 }
 .event {
 	border: 1px solid black;

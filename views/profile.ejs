@@ -134,7 +134,7 @@
         <button type="button" class="btn btn-warning btn-lg post" data-toggle="modal" data-target="#event">Create New Event</button>
         <section id="pinBoot"> 
             <h2></h2>
-            <% for(var i=0; i < event.length; i++) {%> 
+      <% for(var i=0; i < event.length; i++) {%> 
             <h2></h2> <!-- this <h2>has to stay to keep the plugin set up correctly -->
             <hr>
             
@@ -144,11 +144,13 @@
             <h5 class="textFont"><span><%= event[i].date %></span></h5>
             <p class="textFont"><%= event[i].about %></p>
             <h5><span>Created By: <%= event[i].createdBy %></span></h5>
-              <% if (user.local.name === event[i].createdBy) {%>
+
+       <% if (user.local.name === event[i].createdBy) {%>
                <form action="/event/:id" method="POST">
                <p><button type="submit" class="form-control btn-sm">delete</button></p>
                <input type="hidden" class="form-control" name="eventId" value="<%=event[i]._id%>">
-               </form><% } %>
+               </form>
+      <% } %>
           </article>
       <% } %>
         </section>

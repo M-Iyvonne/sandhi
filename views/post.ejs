@@ -34,11 +34,22 @@
                   <p><%= comments[blasts[i].comments[j]].author %>
                   <% if (user.local.name === comments[blasts[i].comments[j]].author) {%>
                    <a href="/post/delete?id=<%=comments[blasts[i].comments[j]]._id%>">Delete</a>
-                   <a id="commentUp" href="/post/update?id=<%=comments[blasts[i].comments[j]]._id%>">Update</a></p>
-                   <% } %>
+                   <a id="commentUp" data-href="/post/update?id=<%=comments[blasts[i].comments[j]]._id%>" href="#updateComm_<%=comments[blasts[i].comments[j]]._id%>">Update</a>
+        
+                   <form id="updateComm_<%=comments[blasts[i].comments[j]]._id%>" class="form-inline comment" action="/post/update" method="POST">
+                      <div class="form-group col-sm-8">
+                        <input type="hidden" name="blast_id" value=" <%=blasts[i]._id%> ">
+                        <input type="hidden" name="name">
+                        <input type="hidden" name="comment_id" value="<%=comments[blasts[i].comments[j]]._id%>">
+                        <textarea type="text" id="input" class="form-control" name="comment"><%=comments[blasts[i].comments[j]].subject%></textarea> 
+                      </div>
+                      <div><button type="submit" class="btn btn-secondary">Comment</button>
+                      </div>
+                    </form>
+                   <% } %> <!--the end of the piece to how update and Delete For User -->
                 </div>
                </form>
-              <% } %>
+              <% } %> <!--this is the end of the Comment loop -->
           </div>
           
           <form class="form-inline" action="/comment" method="POST">
@@ -52,7 +63,7 @@
             </div>
            </form>
         </div>
-        <% } %>
+        <% } %> <!--this is the end of the Blast loop -->
       </div>
    </div>
 

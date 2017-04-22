@@ -1,12 +1,23 @@
 $(document).ready(function(){
 	
-'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=CnRtAAAATLZNl354RwP_9UKbQ_5Psy40texXePv4oAlgP4qNEkdIrkyse7rPXYGd9D_Uj1rVsQdWT4oRz4QrYAJNpFX7rzqqMlZw2h2E2y5IKMUZ7ouD_SlcHxYq1yL4KbKUv3qtWgTK0A6QbGh87GB3sscrHRIQiG2RrmU_jF4tENr9wGS_YxoUSSDrYjWmrNfeEHSGSc3FyhNLlBU&key=YOUR_API_KEY'
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '377938202593271',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();   
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
 
     });	
 
 
-
-
-'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference='
-
-'&key=AIzaSyC_vkYwtmG26_b08J_a1CJa_PQax8wkJis'

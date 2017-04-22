@@ -121,10 +121,26 @@ app.post('/comment', isLoggedIn, function(req, res) {
         }
     });
 
-    });
+});
+
+app.post('/post/update', isLoggedIn, function(req, res){
+    if(req.body.comment_id){
+        Comment.findOne({_id: req.body.comment_id}, function(err, comment){
+           if(!err){
+            comment.subject = req.body.comment;
+            comment.save(function(err, comment2){
+                if(!err){
+                    res.redirect('/post');
+                }else{
+                    res.status(500).send(err);
+                }
+             })
+            }
+        })
+    }
+});
 app.get('/post/delete', isLoggedIn, function(req, res){
     if(req.query.id){
-        var dComment = req.query.id;
         Comment.findOne({_id: req.query.id}, function(err, comment){
             Blast.findOne({ 'comments': {"$elemMatch":{"$in":[req.query.id]}}}, function(err2, comment2){
                 comment.remove();
