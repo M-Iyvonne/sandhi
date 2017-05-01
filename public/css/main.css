@@ -13,6 +13,7 @@ body {
  	height: 500px;
  	margin-bottom: 50px;
  	border-radius: 15px;
+  border: 15px white solid;
  }
  .test2 { 
   margin-top: 50px;
@@ -22,6 +23,7 @@ body {
   height: 500px;
   margin-bottom: 50px;
   border-radius: 15px;
+  border: 15px white solid;
  }
  .rainbow {
 /*  background-image: url("/images/dots.png");
